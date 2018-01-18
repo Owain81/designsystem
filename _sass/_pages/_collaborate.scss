@@ -1,0 +1,26 @@
+.collaborate {
+  margin-bottom: $col-margin-bottom;
+}
+
+.collaborate-img {
+  min-height: $col-image-min-height;
+  margin-bottom: $col-margin-bottom;
+  background-repeat: no-repeat;
+  background-size: $col-image-background-size $col-image-background-size;
+
+  &--grow {
+    @include icon-grow;
+  }
+
+  &--bug {
+    @include icon-bug;
+  }
+
+  &--yammer {
+    @include icon-yammer;
+  }
+
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}

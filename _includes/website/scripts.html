@@ -1,0 +1,64 @@
+{%- if page.layout == "default-page" or
+      page.layout == "component" or
+      page.layout == "component-status" or
+      page.layout == "typography" or
+      page.layout == "colors" or
+      page.layout == "icons" or
+      page.layout == "design-pattern" or
+      page.layout == "design-pattern-overview" or
+      page.layout == "design-pattern-variations" or
+      page.layout == "home-page" or
+      page.layout == "principles" or
+      page.layout == "get-started" or
+      page.layout == "collaborate" or
+      page.layout == "vision" or
+      page.layout == "ui-design-kit" or
+      page.layout == "search-results" -%}
+
+  <!-- Bootstrap -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+	<!-- mCustomScrollbar-->
+	<script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- Velocity -->
+	<script src="//cdn.rawgit.com/julianshapiro/velocity/master/velocity.min.js"></script>
+
+	<!-- clipboard.js -->
+	<script src="//cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+
+	<!-- list.js -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+	<!-- FileSaver.js -->
+	<script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+
+	<!-- Custom website scripts -->
+  {%- if jekyll.environment == "development" -%}
+  	<script src="{{ "/js/minified/scripts-all.js" | prepend: site.baseurl }}" async></script>
+  {%- endif -%}
+
+  {%- if jekyll.environment == "production" -%}
+  	<script src="{{ "/js/minified/scripts-all.min.js" | prepend: site.baseurl }}" async></script>
+	{%- endif -%}
+
+  <!-- Iframes resizing -->
+  <script type='text/javascript'>
+    (function () {
+      var iframes = document.querySelectorAll('iframe');
+      Array.prototype.forEach.call(iframes, resizeIframe);
+
+      function resizeIframe (iframe) {
+        iframe.onload = function () {
+          iframe.style.height = iframe.contentWindow.document.body.offsetHeight + 'px';
+        }
+      }
+    }());
+  </script>
+{%- endif -%}
+
+<!-- Stylesheet specific to the rendered iframe of a component -->
+{%- if page.layout == "component-iframe"  -%}
+  <script type="text/javascript" src="{{ "/js/uilibrary/DesignSystem-0.1.1.min.js" | prepend: site.baseurl }}"></script>
+{%- endif -%}

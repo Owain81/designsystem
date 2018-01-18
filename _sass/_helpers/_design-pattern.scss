@@ -1,0 +1,46 @@
+// Design pattern page
+$dp-list-element-icon-left: 16px;
+$dp-list-element-icon-do: '\f00c';
+$dp-list-element-icon-dont: '\f00d';
+$dp-video-element-icon-play: '\f144';
+$dp-video-element-icon-pause: '\f28b';
+$dp-content-icon-hamburger: '\f0c9';
+$dp-video-overlay-color: rgba($color-grey-unit4, .5);
+$dp-video-overlay-icon-size: px-to-rem(96px);
+
+// Back button
+$dp-back-button-margin-bottom: 48px;
+$dp-back-button-icon-margin-right: 8px;
+$dp-mobile-back-button-top: 0;
+$dp-mobile-back-button-left: 0;
+$dp-mobile-back-button-padding-top: px-to-rem(12px);
+$dp-mobile-back-button-width: 100%;
+$dp-mobile-back-button-color: $color-white;
+$dp-mobile-back-button-icon-margin-right: 24px;
+
+@mixin video-overlay($state) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $dp-video-overlay-color;
+  cursor: pointer;
+  color: $color-white;
+
+  &:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: FontAwesome;
+    font-size: $dp-video-overlay-icon-size;
+    @if $state == 'play' {
+      content: $dp-video-element-icon-play;
+    } @else if $state 'pause' {
+      content: $dp-video-element-icon-pause;
+    }
+  }
+}

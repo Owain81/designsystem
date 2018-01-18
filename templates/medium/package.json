@@ -1,0 +1,21 @@
+{
+  "name": "unit4-design-system",
+  "version": "1.0.1",
+  "description": "A CSS/JS/HTML framework which allows you to easily create software using the modular building blocks it provides.",
+  "main": "index.html",
+  "dependencies": {
+    "grunt-express": "^1.4.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-open": "^0.2.3",
+    "grunt-parallel": "^0.5.1",
+    "matchdep": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "UNIT4 UX CENTER",
+  "license": "MIT"
+}

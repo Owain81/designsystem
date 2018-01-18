@@ -1,0 +1,26 @@
+// Section current version
+
+$current-version-margin: 0 0 px-to-rem(set-space(xl));
+
+// Section status list
+
+$status-list-margin: 0 0 px-to-rem(28px);
+$status-list-element-margin-right: px-to-rem(32px);
+$status-list-icon-margin-right: px-to-rem(3px);
+
+// Section component table
+
+$component-table-max-width: 640px;
+$component-table-tag-background-color: $color-warning-pale;
+$component-table-tag-padding: px-to-rem(1px) px-to-rem(10px) px-to-rem(2px);
+$component-table-name-margin-right: 10px;
+$component-table-tag-border-radius: 100px;
+$component-table-tag-font-size: 12px;
+$component-table-ready-icon-color: $color-success;
+$component-table-inprogress-icon-color: $color-blue;
+$component-table-depricated-icon-color: $color-alert;
+
+// Section tag descriptions
+
+$tag-descriptions-margin-top: px-to-rem(set-space(xxxxl));
+$tag-descriptions-row-margin-bottom: px-to-rem(16px);

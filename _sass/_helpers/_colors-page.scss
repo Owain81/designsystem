@@ -1,0 +1,19 @@
+// Colors page
+
+$color-page-h2-margin: px-to-rem(48px) 0 0;
+$color-page-h4-margin: px-to-rem(28px) 0 px-to-rem(20px);
+
+$color-text-color: $color-black;
+$color-padding: px-to-rem(8px) px-to-rem(16px);
+$color-copy-button-width: 28px;
+$color-copy-width: 40px;
+$color-copy-margin-right: px-to-rem(-5px);
+$color-copy-hover-transform: scale(1);
+$color-copy-transform: scale(0);
+$color-copy-transition: transform $color-picker-motion-easing $color-picker-motion-time;
+$color-copy-message-left: -45px;
+$color-copy-message-show-left: -50px;
+
+$color-tooltip-text-color: $color-black;
+$color-tooltip-font-size: px-to-rem(16px);
+$color-tooltip-margin-left: px-to-rem(7px);

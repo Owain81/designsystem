@@ -1,0 +1,14 @@
+// Chips
+$chips-item-margin: 0 12px 12px 0;
+$chips-item-padding: px-to-rem(4px) px-to-rem(10px);
+$chips-item-border: 1px solid $color-grey-unit4;
+$chips-item-border-radius: 30px;
+$chips-item-color: $color-grey-unit4;
+$chips-item-font-size: px-to-rem(14px);
+$chips-item-line-height: 1;
+$chips-item-hover-background-color: $color-grey-unit4;
+$chips-item-hover-color: $color-white;
+
+// Chips in card
+$chips-item-in-card-bg-color: $color-grey-12;
+$chips-item-in-card-font-size: px-to-rem(12px);

@@ -1,0 +1,94 @@
+{% assign content = page.content | strip_newlines %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--default page--design-pattern-overview">
+  {% include website/navigation.html %}
+  <main class="main" aria-label="Content">
+    {% include website/header.html %}
+
+    <script type="text/javascript">
+      var dsUIPatterns = angular.module('DS_UIPatterns', []);
+
+      dsUIPatterns.factory(
+        'tags', function () {
+          return [ 'All',
+            {% if site.data.dp-menu.design-patterns-menu[0] %}
+            {%- for item in site.data.dp-menu.design-patterns-menu -%}
+                {%- for entry in item.subfolderitems -%}
+                  '{{ entry.page }}',
+                {%- endfor -%}
+              {%- endfor -%} ''
+            {% endif %}
+          ].slice(0, -1);
+        }
+      );
+
+      dsUIPatterns.factory(
+        'patterns', function () {
+          return [
+            {% if site.data.dp-menu.design-patterns-menu[0] %}
+            {%- for item in site.data.dp-menu.design-patterns-menu -%}
+                {%- for entry in item.subfolderitems -%}
+                  {%- for subentry in entry.subsubfolderitems -%}
+                    {
+                      thumbnail: '{{ site.baseurl }}/images/design-patterns/thumbs/design-pattern-{{ subentry.page | slugify }}.png',
+                      thumbnail_position: '{{ subentry.thumb-position }}',
+                      pattern_page_url: '{{ site.baseurl }}{{ subentry.url }}',
+                      title: '{{ subentry.page }}',
+                      tags: [
+                        {%- for tag in subentry.tags -%}
+                          '{{ tag }}',
+                        {%- endfor -%} ''
+                      ].slice(0, -1)
+                    },
+                  {%- endfor -%}
+                {%- endfor -%}
+              {%- endfor -%} {}
+            {% endif %}
+          ].slice(0, -1);
+        }
+      );
+    </script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/uipatterns-overview.js"></script>
+
+    <div class="container-fluid main-content" ng-app="DS_UIPatterns" ng-controller="overviewController">
+      <div class="mb-28">
+        {{ content }}
+      </div>
+
+      <div class="chips mb-28">
+        {% raw  %}
+        <div class="chips__item" ng-repeat="tag in tags" ng-cloak ng-class="{ 'chips__item--active' : isChecked(tag) }" ng-click="toggleFilter(tag)">
+          {{ tag }}
+        </div>
+        {% endraw  %}
+      </div>
+
+      <div class="row">
+        {% raw  %}
+        <div class="col-12 col-sm-6 col-lg-4" ng-repeat="pattern in filteredPatterns = (patterns | inArray:activeFilters:'tags') | limitTo:pageSize:pageSize*(page-1)" ng-cloak>
+          <div class="card card--background" style="background-image: url('{{ pattern.thumbnail }}'); background-position: {{ pattern.thumbnail_position }}">
+            <a class="card__link" href="{{  pattern.pattern_page_url }}"></a>
+            <h4 class="card__title card__title--bottom"><a href="{{  pattern.pattern_page_url }}">{{ pattern.title }}</a></h4>
+          </div>
+          <div class="chips mb-32">
+              <div class="chips__item chips__item--in-card" ng-repeat="tag in pattern.tags" ng-click="setFilter(tag)">
+                {{ tag }}
+              </div>
+          </div>
+        </div>
+        {% endraw  %}
+      </div>
+
+      {% include website/pagination.html  %}
+
+    </div>
+  </main>
+  {% include website/scripts.html %}
+</body>
+
+</html>

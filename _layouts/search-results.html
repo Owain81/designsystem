@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--default page--search-results">
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% include website/header.html  %}
+
+
+		<section class="container-fluid main-content ds_search_component search-results" ng-controller="searchResultsController" ng-cloak>
+			{% raw  %}
+			<h1>Results for <strong>{{ searchTerm }}</strong></h1>
+
+			<ul class="search-results-list">
+				<li ng-repeat="page in searchResults = (index | filterAndPonderate: searchTerm | orderBy: '-score')| limitTo:pageSize:pageSize*(page-1)"
+					class="search-results-list__item">
+					<a href="{{ page.url }}">
+						<h1 class="search-results-list__item-title"
+						ng-bind-html="extractSectionFromURL(page.url) ? hightLightTerm(extractSectionFromURL(page.url) + ' &gt; ' + page.title) : hightLightTerm(page.title)"></h1>
+						<p class="search-results-list__item-description" ng-bind-html="hightLightTerm(extractDescription(page))"></p>
+					</a>
+				</li>
+			</ul>
+			{% endraw %}
+
+			{% include website/pagination.html  %}
+
+			{% raw  %}
+			<div class="search-results-empty"
+					ng-show="isLoaded && (searchResults && searchResults.length == 0)">
+				<div class="search-results-empty__icon"></div>
+				<h2>Ooops, no results found!</h2>
+				<p>Try rewording your search or entering a new keyword </p>
+			</div>
+			{% endraw %}
+
+		</section>
+	</main>
+
+	{% include website/scripts.html %}
+
+</body>
+</html>

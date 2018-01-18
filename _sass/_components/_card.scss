@@ -1,0 +1,54 @@
+.card {
+  padding: $card-padding;
+  border-radius: 0;
+  border-color: $card-border-color;
+
+  &:hover {
+    .card__link {
+      opacity: $card-hover-mask-opacity;
+    }
+
+    .card__title a {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    height: $card-icon-height;
+    margin-bottom: $card-icon-margin-bottom;
+    color: $card-color;
+    font-size: px-to-rem($card-icon-height);
+
+    .fa {
+      vertical-align: top;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity $navigation-element-hover-motion-time ease;
+    background-color: $dp-overview-card-mask-color;
+    opacity: 0;
+  }
+
+  &__title {
+    margin-bottom: $card-title-margin-bottom;
+    color: $card-color;
+
+    &--bottom {
+      position: absolute;
+      bottom: $card-title-bottom-bottom;
+      left: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    color: $card-color;
+    font-size: $card-desc-font-size;
+  }
+}

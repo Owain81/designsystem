@@ -1,0 +1,20 @@
+<li class="icon">
+	<div class="icon__img">
+		<i class="fa fa-{{ icons.name }}" aria-hidden="true"></i>
+	</div>
+	<div class="icon__text">{{ icons.name }}</div>
+
+	<div class="icon__actions">
+		<div class="download">
+			<a class="download__link" data-href="{{ site.baseurl }}/images/icons/u4-icon/{{ icons.name }}.svg" data-icon-name="{{ icons.name }}">
+				<i class="fa fa-download" aria-hidden="true"></i>Download</a>
+		</div>
+		<div class="copy">
+			<span class="copy-clipboard">
+				<div class="copy-message"></div>
+				<i class="fa fa-copy" aria-hidden="true"></i>Copy
+			</span>
+			<div id="code-clipboard">{% highlight html %}<svg class=""><use xlink:href="#u4-icon--{{ icons.name }}"></use></svg>{% endhighlight %}</div>
+		</div>
+	</div>
+</li>

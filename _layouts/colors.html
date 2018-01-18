@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--colors">
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% include website/header.html tab1="Swatches" tab2="Usage" breadcrumbs="true" %}
+		<div class="container-fluid main-content">
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane tab--swatches active" id="swatches">
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h2 class="mt-0">Primary palette</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Grey range</h4>
+							{%- for colors in site.data.colors.grey -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Black and white</h4>
+							{%- for colors in site.data.colors.black-white -%}
+								{% include website/colors/color-block.html black-and-white="true" %}
+							{%- endfor -%}
+
+							<h4>Blue range</h4>
+							{%- for colors in site.data.colors.blue -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Grey blue</h4>
+							{%- for colors in site.data.colors.grey-blue -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h2>Notifications</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Alert</h4>
+							{%- for colors in site.data.colors.alert -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Warning</h4>
+							{%- for colors in site.data.colors.warning -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Success</h4>
+							{%- for colors in site.data.colors.success -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Info</h4>
+							{%- for colors in site.data.colors.info -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>System</h4>
+							{%- for colors in site.data.colors.system -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4"></div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h2>Shades part I</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>U4 Green</h4>
+							{%- for colors in site.data.colors.u4-green -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>U4 Blue</h4>
+							{%- for colors in site.data.colors.u4-blue -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>U4 Orange</h4>
+							{%- for colors in site.data.colors.orange -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Blue</h4>
+							{%- for colors in site.data.colors.blue-shades -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Violet</h4>
+							{%- for colors in site.data.colors.violet -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Aqua</h4>
+							{%- for colors in site.data.colors.aqua -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h2>Shades part 2</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Pink</h4>
+							{%- for colors in site.data.colors.pink -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Yellow</h4>
+							{%- for colors in site.data.colors.yellow -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Purple</h4>
+							{%- for colors in site.data.colors.purple -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Green</h4>
+							{%- for colors in site.data.colors.green -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Red</h4>
+							{%- for colors in site.data.colors.red -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+						<div class="col-12 col-sm-6 col-xl-4">
+							<h4>Purple 2</h4>
+							{%- for colors in site.data.colors.purple2 -%}
+								{% include website/colors/color-block.html %}
+							{%- endfor -%}
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane tab--usage" id="usage">
+						<div class="row">
+								<div class="col-12">
+										<div class="table-of-contents"></div>
+
+										<h2 id="introduction">Introduction</h2>
+										{{ page.usage-introduction | markdownify }}
+
+										<div class="usage__color">
+											{{ page.usage-tables | markdownify }}
+										</div>
+
+										<div class="usage__tips">
+									  	{{ page.usage-tips | markdownify }}
+										</div>
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	{% include website/scripts.html %}
+
+</body>
+
+</html>

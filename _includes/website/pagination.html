@@ -1,0 +1,17 @@
+{% raw  %}
+
+<div class="pagination" ng-show="totalPages() > 1">
+	<button ng-disabled="page < 2" ng-click="setPage(page - 1)" class="pagination__previous">
+		<i class="fa fa-angle-left" aria-hidden="true"></i> Previous page
+	</button>
+
+	<button ng-repeat="n in pagesRange()"
+                  ng-click="setPage(n)"
+                  ng-class="{ 'is--active' : (page == n) }">{{ n }}</button>
+
+	<button ng-disabled="isLastPage(page)" ng-click="setPage(page + 1)" class="pagination__next">
+		<i class="fa fa-angle-right" aria-hidden="true"></i> Next page
+	</button>
+</div>
+
+{% endraw  %}

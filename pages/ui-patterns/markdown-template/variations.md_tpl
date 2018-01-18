@@ -1,0 +1,105 @@
+---
+# Title of design pattern page
+title:
+
+# Choose a layout for page, 'design-pattern' for default one and 'design-pattern-variations' for patterns with double variations.
+layout: design-pattern-variations
+
+# Name of the group which pattern belongs.
+category:
+
+# Path of the page, always according to this pattern 'ui-patterns/name-of-the-group/design-pattern-title/'
+permalink: ui-patterns/feedback-notifications/confirmation/
+
+# Design pattern type is for distinguish layouts for mobile and desktop design patterns.
+# Available variables:
+# - mobile
+# - desktop
+design-pattern-type: mobile
+
+# If design pattern has main image, place the name of the file. Example 'design-pattern-tabs2.png'. 
+# Remember to add image to image folder `images/design-patterns`. (Ony for mobile)
+main-image-variation:
+
+# If design pattern has some second image, place the name of the file. Example 'design-pattern-tabs2.png'. 
+# Remember to add image to image folder `images/design-patterns`.
+extra-image-variation-1:
+extra-image-variation-2:
+
+# If design pattern has some second video, place the name of the file. Example 'design-pattern-tabs2'. 
+# Remember to add image to image folder `images/design-patterns`. (Ony for mobile)
+extra-video-variation-1:
+extra-video-variation-2:
+extra-video-variation-3:
+
+# Content of design pattern, devided for 4 fields in each variation. 
+# You can use markdown inside, but remember to add one space in every new line.
+what:
+ An element reflecting the system reaction after a user action. It can either be a passive element or conceived as a mandatory step.
+
+title-variation-1: Passive confirmation
+
+what-variation-1: >
+ A text message, multi-state button, animation, or graphic representation which confirms the operation that the user just did.    
+
+why-variation-1: >
+ In some contexts, the users are expected to switch views frequently and they should be highly aware of the alternate views.
+
+do-variation-1: >
+ * Try to use an icon and label per tab and always be consistent in form and placement.
+
+ * Allow navigation by connecting tabs to specific page content; through tab selection or content swiping.
+
+ * Highlight the tab selected.
+
+ * Depending on the screen-size, the quantity of the tabs can differ but the number should be the same within the same app.
+ 
+ * Generally use a limited number of tabs with equal width, and short labels (fixed tabs).
+ 
+ * Consider pushing the tabs limit by squeezing in several tabs.
+ 
+ * Consider making tabs scrollable, in order to use a larger number of tabs and/or longer tab titles.
+ 
+ * Consider using OS based tabs styles for navigation tabs: like app tabs for Windows.
+
+dont-variation-1: >
+ * Use tab buttons for a specific action (it is not a toolbar).
+
+ * Disconnect tab from its content (physically).
+ 
+ * Present tabs in different rows.
+ 
+ * Add nested sub-tabs.
+ 
+ * Don’t pair tabs with content that also supports swiping.
+ 
+ * Use comparison of content across tabs, the displayed information should be exclusive.
+ 
+
+title-variation-2: Mandatory confirmation
+ 
+what-variation-2: >
+  A question to the users to verify that they really do want to proceed with the action they just initiated.
+
+why-variation-2: >
+  To allow users to understand the consequences of their actions, and to have the choice to either accept or reject that action.
+ 
+do-variation-2: >
+  * Ask for a second interaction to complete a user action.
+
+  * Talk to the user in a direct way: clearly indicate the action and its consequences, if these are big.
+
+  * Consider using a modal design pattern and/or pairing it with a warning.
+
+  * Use a call to action (preferably no more than 1).
+
+dont-variation-2: >
+ * Use very often within the application, over-warning.
+
+ * Use many consecutively.
+
+ * Use when consequences of an action are reversible or negligible.
+
+ * Confuse with a validation (it is not an error message or passive confirmation).
+
+---

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--icon">
+	<div class="svg-download hidden-xs-up"></div>
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% include website/header.html tab1="Icons" tab2="Usage" breadcrumbs="true" %}
+
+		<div class="container-fluid main-content">
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="icons">
+
+					<div class="row">
+						<div class="col">
+							<div class="search">
+								<div class="container-fluid">
+									<i class="fa fa-search" aria-hidden="true"></i>
+									<input type="text" class="search__field" id="icons-filter" aria="" placeholder="Search">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row icon__content">
+						<div class="col col-12 col-sm-8">
+							<p class="description">We use Fontawesome icons. Below are all the icons available in our icon library. Follow the design and implementation instructions on the usage page.</p>
+						</div>
+            <div class="col col-12 col-sm-4 icon__btn-download-all">
+                <a href="{{ site.baseurl }}/images/icons/u4-icon-all.zip" class="btn btn-outline-primary">Download all icons</a>
+            </div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="icon--no-result text-center mt-48">
+								<h2 class="mt-28">No result found</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="application-icons" class="col">
+							<h2>Application icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.application -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="brand-icons" class="col">
+							<h2>Brand icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.brand -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="hand-icons" class="col">
+							<h2>Hand icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.hand -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="gender-icons" class="col">
+							<h2>Gender icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.gender -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="file-icons" class="col">
+							<h2>File icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.file -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="spinner-icons" class="col">
+							<h2>Spinner icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.spinner -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="form-icons" class="col">
+							<h2>Form control icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.formcontrol -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="payment-icons" class="col">
+							<h2>Payment icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.payment -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="chart-icons" class="col">
+							<h2>Chart icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.chart -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="transportation-icons" class="col">
+							<h2>Transportation icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.transportation -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="currency-icons" class="col">
+							<h2>Currency icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.currency -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="texteditor-icons" class="col">
+							<h2>Text editor icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.texteditor -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="directional-icons" class="col">
+							<h2>Directional icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.directional -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="video-icons" class="col">
+							<h2>Video icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.video -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="medical-icons" class="col">
+							<h2>Medical icons</h2>
+							<ul class="icon-block list">
+								{%- for icons in site.data.icons.medical -%}
+									{% include website/icons/icon-block.html %}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="usage">
+					<h3 class="tab__title">Usage</h3>
+					<p>
+						Lorem ipsum
+					</p>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="visual">
+					<h3 class="tab__title">Visual</h3>
+					<p>
+						Lorem ipsum
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	{% include website/scripts.html %}
+
+	<script>
+		var ajax = new XMLHttpRequest();
+		ajax.open("GET", "{{ site.baseurl }}/images/icons/designsystem-sprite.svg", true);
+		ajax.send();
+		ajax.onload = function(e) {
+			var div = document.createElement("div");
+			div.innerHTML = ajax.responseText;
+			div.style.display = "none";
+			document.body.insertBefore(div, document.body.childNodes[0]);
+		}
+	</script>
+
+</body>
+</html>

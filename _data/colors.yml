@@ -1,0 +1,417 @@
+# Colors palletes
+
+# Primary pallete
+
+# Grey range
+
+grey:
+  - variable: $color-grey-120
+    color: '#4c5358'
+    font-color: white
+    accessibility: AAA
+  - variable: $color-grey-110
+    color: '#6c777c'
+    font-color: white
+    accessibility: AA
+  - variable: $color-grey
+    color: '#7c878e'
+    accessibility: AA
+  - variable: $color-grey-65
+    color: '#aab1b6'
+    accessibility: AAA
+  - variable: $color-grey-34
+    color: '#d2d6d9'
+    accessibility: AAA
+  - variable: $color-grey-18
+    color: '#e7e9eb'
+    accessibility: AAA
+  - variable: $color-grey-12
+    color: '#eff1f1'
+    accessibility: AAA
+  - variable: $color-grey-8
+    color: '#f5f5f6'
+    accessibility: AAA
+
+# Black and white
+
+black-white:
+  - variable: $color-black
+    color: '#000000'
+    accessibility: AAA
+    font-color: white
+  - variable: $color-white
+    color: '#ffffff'
+    accessibility: AAA
+
+# Blue range
+
+blue:
+  - variable: $color-blue
+    color: '#0d78aa'
+    accessibility: AA
+    font-color: white
+  - variable: $color-lightblueselect
+    color: '#b7e9f8'
+    accessibility: AAA
+  - variable: $color-lightblue
+    color: '#dbf4fb'
+    accessibility: AAA
+  - variable: $color-paleblue
+    color: '#edf9fd'
+    accessibility: AAA
+
+# Grey blue
+
+grey-blue:
+  - variable: $color-darkgrey-UNIT4
+    color: '#3f4f5a'
+    accessibility: AAA
+    font-color: white
+  - variable: $color-grey-unit4
+    color: '#4a5c69'
+    accessibility: AA
+    font-color: white
+  - variable: $color-grey-blue-background
+    color: '#e8eef2'
+    accessibility: AAA
+
+# Notifications
+
+# Alert
+
+alert:
+  - variable: $color-alert
+    color: '#c10606'
+    accessibility: AA
+    font-color: white
+  - variable: $color-alert-light
+    color: '#f69390'
+    accessibility: AA
+  - variable: $color-alert-pale
+    color: '#fcd0cc'
+    accessibility: AA
+
+# Warning
+
+warning:
+  - variable: $color-warning
+    color: '#ed6f19'
+    accessibility: AA
+  - variable: $color-warning-light
+    color: '#ffbe64'
+    accessibility: AA
+  - variable: $color-warning-pale
+    color: '#feeab4'
+    accessibility: AAA
+
+# Success
+
+success:
+  - variable: $color-success
+    color: '#5d9834'
+    accessibility: AA
+  - variable: $color-success-light
+    color: '#afd189'
+    accessibility: AAA
+  - variable: $color-success-pale
+    color: '#dbefb9'
+    accessibility: AAA
+
+# Info
+
+info:
+  - variable: $color-info
+    color: '#0d78aa'
+    accessibility: AA
+    font-color: white
+  - variable: $color-info-light
+    color: '#90cdea'
+    accessibility: AAA
+  - variable: $color-info-pale
+    color: '#d9edf7'
+    accessibility: AAA
+
+# System
+
+system:
+  - variable: $color-system
+    color: '#4c5358'
+    accessibility: AAA
+    font-color: white
+  - variable: $color-system-light
+    color: '#d2d6d9'
+    accessibility: AAA
+  - variable: $color-system-pale
+    color: '#e7e9eb'
+    accessibility: AAA
+
+# Shades part I
+
+# U4 green
+
+u4-green:
+  - variable: $color-scheme-u4darkgreen
+    color: '#afc836'
+    accessibility: AAA
+  - variable: $color-scheme-u4green
+    color: '#bfda3a'
+    accessibility: AAA
+  - variable: $color-scheme-u4green-70
+    color: '#d2e575'
+    accessibility: AAA
+  - variable: $color-scheme-u4green-40
+    color: '#e5f0b0'
+    accessibility: AAA
+  - variable: $color-scheme-u4green-20
+    color: '#f2f8d8'
+    accessibility: AAA
+  - variable: $color-scheme-u4green-10
+    color: '#f9fbeb'
+    accessibility: AAA
+
+# U4 blue
+
+u4-blue:
+  - variable: $color-scheme-u4darkblue
+    color: '#38add1'
+    accessibility: AAA
+  - variable: $color-scheme-u4blue
+    color: '#4ac7ed'
+    accessibility: AAA
+  - variable: $color-scheme-u4blue-70
+    color: '#80d8f2'
+    accessibility: AAA
+  - variable: $color-scheme-u4blue-40
+    color: '#b7e9f8'
+    accessibility: AAA
+  - variable: $color-scheme-u4blue-20
+    color: '#dbf4fb'
+    accessibility: AAA
+  - variable: $color-scheme-u4blue-10
+    color: '#edf9fd'
+    accessibility: AAA
+
+# Orange
+
+orange:
+  - variable: $color-scheme-u4darkorange
+    color: '#e87d19'
+    accessibility: AAA
+  - variable: $color-scheme-u4orange
+    color: '#f68d2e'
+    accessibility: AAA
+  - variable: $color-scheme-u4orange-70
+    color: '#f9af6d'
+    accessibility: AAA
+  - variable: $color-scheme-u4orange-40
+    color: '#fbd1ab'
+    accessibility: AAA
+  - variable: $color-scheme-u4orange-20
+    color: '#fde8d5'
+    accessibility: AAA
+  - variable: $color-scheme-u4orange-10
+    color: '#fef4ea'
+    accessibility: AAA
+
+# Blue
+
+blue-shades:
+  - variable: $color-scheme-darkblue
+    color: '#3a83d6'
+    accessibility: AA
+  - variable: $color-scheme-blue
+    color: '#4296f5'
+    accessibility: AA
+  - variable: $color-scheme-blue-70
+    color: '#7bb6f8'
+    accessibility: AAA
+  - variable: $color-scheme-blue-40
+    color: '#b3d5fb'
+    accessibility: AAA
+  - variable: $color-scheme-blue-20
+    color: '#d9eafd'
+    accessibility: AAA
+  - variable: $color-scheme-blue-10
+    color: '#ecf5fe'
+    accessibility: AAA
+
+# Violet
+
+violet:
+  - variable: $color-scheme-darkviolet
+    color: '#c13bdb'
+    accessibility: AA
+  - variable: $color-scheme-violet
+    color: '#d742f5'
+    accessibility: AA
+  - variable: $color-scheme-violet-70
+    color: '#e37bf8'
+    accessibility: AAA
+  - variable: $color-scheme-violet-40
+    color: '#efb3fb'
+    accessibility: AAA
+  - variable: $color-scheme-violet-20
+    color: '#f7d9fd'
+    accessibility: AAA
+  - variable: $color-scheme-violet-10
+    color: '#fbecfe'
+    accessibility: AAA
+
+# Aqua
+
+aqua:
+  - variable: $color-scheme-darkaqua
+    color: '#17d196'
+    accessibility: AAA
+  - variable: $color-scheme-aqua
+    color: '#19e2a2'
+    accessibility: AAA
+  - variable: $color-scheme-aqua-70
+    color: '#5eebbe'
+    accessibility: AAA
+  - variable: $color-scheme-aqua-40
+    color: '#a3f3da'
+    accessibility: AAA
+  - variable: $color-scheme-aqua-20
+    color: '#d1f9ec'
+    accessibility: AAA
+  - variable: $color-scheme-aqua-10
+    color: '#e8fcf6'
+    accessibility: AAA
+
+# Shades part II
+
+# Pink
+
+pink:
+  - variable: $color-scheme-darkpink
+    color: '#db4ba6'
+    accessibility: AA
+  - variable: $color-scheme-pink
+    color: '#ed51b4'
+    accessibility: AA
+  - variable: $color-scheme-pink-70
+    color: '#f285cb'
+    accessibility: AAA
+  - variable: $color-scheme-pink-40
+    color: '#f8b9e1'
+    accessibility: AAA
+  - variable: $color-scheme-pink-20
+    color: '#fbdcf0'
+    accessibility: AAA
+  - variable: $color-scheme-pink-10
+    color: '#fdeef8'
+    accessibility: AAA
+
+# Yellow
+
+yellow:
+  - variable: $color-scheme-darkyellow
+    color: '#ebbf3b'
+    accessibility: AAA
+  - variable: $color-scheme-yellow
+    color: '#facf4b'
+    accessibility: AAA
+  - variable: $color-scheme-yellow-70
+    color: '#fcdd81'
+    accessibility: AAA
+  - variable: $color-scheme-yellow-40
+    color: '#fdecb7'
+    accessibility: AAA
+  - variable: $color-scheme-yellow-20
+    color: '#fef5db'
+    accessibility: AAA
+  - variable: $color-scheme-yellow-10
+    color: '#fffaed'
+    accessibility: AAA
+
+# Purple
+
+purple:
+  - variable: $color-scheme-darkpurple
+    color: '#8a3cde'
+    font-color: white
+    accessibility: AA
+  - variable: $color-scheme-purple
+    color: '#a04bfa'
+    accessibility: AA
+  - variable: $color-scheme-purple-70
+    color: '#bd81fc'
+    accessibility: AAA
+  - variable: $color-scheme-purple-40
+    color: '#d9b7fd'
+    accessibility: AAA
+  - variable: $color-scheme-purple-20
+    color: '#ecdbfe'
+    accessibility: AAA
+  - variable: $color-scheme-purple-10
+    color: '#f6edff'
+    accessibility: AAA
+
+# Green
+
+green:
+  - variable: $color-scheme-darkgreen
+    color: '#6acc52'
+    accessibility: AAA
+  - variable: $color-scheme-green
+    color: '#75e05a'
+    accessibility: AAA
+  - variable: $color-scheme-green-70
+    color: '#9ee98c'
+    accessibility: AAA
+  - variable: $color-scheme-green-40
+    color: '#c8f3bd'
+    accessibility: AAA
+  - variable: $color-scheme-green-20
+    color: '#e3f9de'
+    accessibility: AAA
+  - variable: $color-scheme-green-10
+    color: '#f1fcef'
+    accessibility: AAA
+
+# Red
+
+red:
+  - variable: $color-scheme-darkred
+    color: '#e03f3d'
+    accessibility: AA
+  - variable: $color-scheme-red
+    color: '#fa4e4b'
+    accessibility: AA
+  - variable: $color-scheme-red-70
+    color: '#fc8381'
+    accessibility: AAA
+  - variable: $color-scheme-red-40
+    color: '#fdb8b7'
+    accessibility: AAA
+  - variable: $color-scheme-red-20
+    color: '#fedcdb'
+    accessibility: AAA
+  - variable: $color-scheme-red-10
+    color: '#ffeded'
+    accessibility: AAA
+
+# Purple2
+
+purple2:
+  - variable: $color-scheme-darkpurple2
+    color: '#5c3cde'
+    font-color: white
+    accessibility: AA
+  - variable: $color-scheme-purple2
+    color: '#704dfa'
+    font-color: white
+    accessibility: AA
+  - variable: $color-scheme-purple2-70
+    color: '#9b82fc'
+    accessibility: AAA
+  - variable: $color-scheme-purple2-40
+    color: '#c6b8fd'
+    accessibility: AAA
+  - variable: $color-scheme-purple2-20
+    color: '#e2dbfe'
+    accessibility: AAA
+  - variable: $color-scheme-purple2-10
+    color: '#f1edff'
+    accessibility: AAA

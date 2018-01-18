@@ -1,0 +1,35 @@
+<script type="text/javascript">
+	var DS_BASE_URL = '{{ site.baseurl }}';
+</script>
+
+{% raw  %}
+<div class="ds_search_component" ng-controller="searchController" ng-cloak>
+	<div class="search-input">
+		<input type="text" ng-model="searchTerm" placeholder="Search"
+		ng-focus="showRecent()"
+		ng-blur="hideRecent()"
+		ng-keydown="$event.keyCode === 13 && performSearch()" />
+		<i class="fa fa-search" aria-hidden="true" ng-click="performSearch()"></i>
+	</div>
+
+	<ul class="search-list" ng-show="showSuggestions()">
+		<li ng-repeat="page in resultsList = (index | filterAndPonderate: searchTerm | orderBy: '-score') | limitTo:listSize" 
+			class="search-list__item">
+			<a href="{{ page.url }}">
+				<h1 class="search-list__item-title" ng-bind-html="hightLightTerm(page.title)"></h1>
+				<h2 class="search-list__item-section">{{ extractSectionFromURL(page.url) }}</h2>
+			</a>
+		</li>
+
+		<li class="search-list__item search-list__more-results-item" ng-show="shouldShowMore()">
+			<a href ng-click="performSearch()">Show all results ({{ resultsList.length  }})</a>
+		</li>
+	</ul>
+
+	<ul class="recent-search" ng-show="shouldShowRecent()">
+		<li class="recent-search__item" ng-repeat="term in recentTerms | limitTo:9">
+			<a href ng-click="useTerm(term);">{{ term }}</a>
+		</li>
+	</ul>
+</div>
+{% endraw %}

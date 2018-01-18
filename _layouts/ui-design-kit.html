@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--default">
+  {% include website/navigation.html %}
+  <main class="main" aria-label="Content">
+    {% include website/header.html breadcrumbs="true" %}
+
+    <div class="container-fluid main-content">
+      <div class="row">
+        <div class="col">
+          <div class="kit__content mb-48">{{ content }}</div>
+        </div>
+      </div>
+      {%- for kits in page.kits -%}
+      <div class="row">
+        <div class="col">
+          <div class="kit kit--{{ kits.class-name }} mb-48">
+            <h3 class="kit__title mb-8">{{ kits.title }}</h3>
+            <div class="kit__desc mb-16">
+              {{ kits.description | markdownify }}
+            </div>
+            <a href="{{ site.baseurl }}/resources/{{ kits.link }}" class="btn btn-primary--splash">{{ kits.button }}</a>
+          </div>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </main>
+  {% include website/scripts.html %}
+</body>
+
+</html>

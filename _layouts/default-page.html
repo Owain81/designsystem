@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--default">
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% if page.breadcrumbs %}
+			{% include website/header.html breadcrumbs="true" %}
+		{% else %}
+			{% include website/header.html %}
+		{% endif %}
+		<div class="container-fluid main-content">
+			<div class="row">
+				<div class="col">
+					{% if page.introduction %}
+						{{ page.introduction | markdownify }}
+					{% endif %}
+					{% if page.toc != false %}
+						<div class="table-of-contents"></div>
+					{% endif %}
+					{{ content }}
+				</div>
+			</div>
+		</div>
+	</main>
+	{% include website/scripts.html %}
+</body>
+
+</html>

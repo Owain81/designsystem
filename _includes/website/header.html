@@ -1,0 +1,40 @@
+<header class="{% if include.tab1 and page.tabs == true %}tabs-in {% endif %}{% if include.breadcrumbs %}breadcrumbs-in{% endif %}">
+	<div class="container-fluid">
+		{%- if include.breadcrumbs -%}
+			<div class="breadcrumbs hidden-lg-down">{%- if page.layout == 'design-pattern' or page.layout == 'design-pattern-variations' or page.layout == 'design-pattern-group-overview' -%}
+																								<span class="breadcrumbs__element">UI patterns</span>
+																								{% if page.category %} > <span class="breadcrumbs__element">{{ page.category }}</span>{% endif %}
+																							{%- elsif page.category == 'motion' -%}
+																								<span class="breadcrumbs__element">Guidelines</span> > <span class="breadcrumbs__element">Motion design</span>
+																							{%- else -%}
+																							{{ page.category }}
+																							{%- endif -%}
+			</div>
+		{%- endif -%}
+		<h1 class="{% if include.tab1 and page.tabs == true %}tabs-in{% endif %}">{{ title }}</h1>
+		{% if include.tab1 and page.tabs == true %}
+		<ul class="nav nav-tabs" role="tablist">
+			{% if include.tab1 %}
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" href="#{{ include.tab1 | downcase }}" aria-controls="{{ include.tab1 | downcase }}" title="{{ include.tab1 }}" role="tab" data-toggle="tab">{{ include.tab1 }}</a>
+        </li>
+			{% endif %}
+			{% if include.tab2 %}
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#{{ include.tab2 | downcase }}" aria-controls="{{ include.tab2 | downcase }}" title="{{ include.tab2 }}" role="tab" data-toggle="tab">{{ include.tab2 }}</a>
+        </li>
+			{% endif %}
+			{% if include.tab3 %}
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#{{ include.tab3 | downcase }}" aria-controls="{{ include.tab3 | downcase }}" title="{{ include.tab3 }}" role="tab" data-toggle="tab">{{ include.tab3 }}</a>
+        </li>
+			{% endif %}
+			{% if include.tab4 %}
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" href="#{{ include.tab4 | downcase }}" aria-controls="{{ include.tab4 | downcase }}" title="{{ include.tab4 }}" role="tab" data-toggle="tab">{{ include.tab4 }}</a>
+        </li>
+			{% endif %}
+		</ul>
+		{% endif %}
+	</div>
+</header>

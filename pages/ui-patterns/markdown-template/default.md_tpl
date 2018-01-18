@@ -1,0 +1,50 @@
+---
+# Title of design pattern page
+title:
+
+# Choose a layout for page, 'design-pattern' for default one and 'design-pattern-variations' for patterns with double variations.
+layout: design-pattern
+
+# Name of the group which pattern belongs.
+category:
+
+# Path of the page, always according to this pattern 'ui-patterns/name-of-the-group/design-pattern-title/'
+permalink: 
+
+# Design pattern type is for distinguish layouts for mobile and desktop design patterns.
+# Available variables:
+# - mobile
+# - desktop
+design-pattern-type:
+
+# If design pattern has video instead of picture, set this variable to 'true'. If not, leave it empty.
+# Remember to put video file to image folder `images/design-patterns`. 
+# File name should be according to following pattern 'design-pattern-video-title.mp4'. Example: 'design-pattern-video-page-swiping.mp4'.
+design-pattern-video:
+
+# If design pattern has some second image, place the name of the file. Example 'design-pattern-tabs2.png'. 
+# Remember to add image to image folder `images/design-patterns`.
+extra-image-1:
+
+# Content of design pattern, devided for 4 fields. You can use markdown inside, but remember to add one space in every new line.
+what: >
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id semper risus. Ut commodo pretium felis, quis congue turpis ullamcorper eget.
+
+why: >
+ Aliquam et lorem rutrum, pellentesque ex sit amet, pharetra eros. Cras non finibus ipsum. Vivamus eleifend gravida magna, sit amet tempor nisi tempus ac. 
+
+do: >
+ * Ut non tincidunt ipsum. Aliquam convallis molestie enim ut condimentum.
+
+ * Integer blandit ipsum massa, nec tempus neque volutpat id.
+
+ * Vivamus condimentum hendrerit dolor sit amet vulputate.
+ 
+dont: >
+ * Ut non tincidunt ipsum. Aliquam convallis molestie enim ut condimentum.
+
+ * Integer blandit ipsum massa, nec tempus neque volutpat id.
+
+ * Vivamus condimentum hendrerit dolor sit amet vulputate.
+
+---

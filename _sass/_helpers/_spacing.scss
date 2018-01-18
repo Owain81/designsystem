@@ -1,0 +1,26 @@
+//// Copyright (c) 2016, unit4.com, inc. All rights reserved.
+///
+/// Spacing is set up in three different groups. Grid, component and element
+///
+///
+/// @group Spacing
+////
+$space-base-value: 16px !default;
+/// Spacing values
+/// @type Map
+$spacing-values: ( 'xss': $space-base-value/2, // 8px
+  'xs': $space-base-value/1.333, // 12px
+  's': $space-base-value, // 16px
+  'm': $space-base-value*1.25, // 20px
+  'l': $space-base-value*1.5, // 24px
+  'xl': $space-base-value*1.75, // 28px
+  'xxl': $space-base-value*2, // 32px
+  'xxxl': $space-base-value*2.25, // 36px
+  'xxxxl': $space-base-value*3, // 48px
+  'xxxxxl': $space-base-value*4, // 64px
+);
+/// Set space on element, based on base value and size
+/// @return {unit} return space on specific attribute
+@function set-space($size) {
+  @return map-get($spacing-values, $size);
+}

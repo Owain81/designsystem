@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--default">
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% include website/header.html %}
+
+		<div class="container-fluid main-content">
+			<div class="row">
+				<div class="col">
+					<h2><span class="principle__intro">{{ page.intro }}</span></h2>
+					{{ content }}
+					<div class="principle__model">
+					  <img src="{{ site.baseurl }}/images/vision/model.svg" alt="Model">
+					</div>
+					{%- for principle in page.principles -%}
+					<div class="principle__section mb-64">
+						<h2 class="hidden-sm-up" style="color: {{ principle.color }};">
+							{{ principle.name }}
+						</h2>
+						<div class="principle__icon principle__icon--{{ principle.name }}"></div>
+						<div class="principle__content">
+							<h2 class="hidden-sm-down" style="color: {{ principle.color }}">{{ principle.name }}</h2>
+              {%- for text in principle.contents -%}
+              <p>{{ text }}</p>
+              {%- endfor -%}
+							<div class="principle__chips">
+								{%- for chip in principle.chips -%}
+								<div class="principle__chip principle__chip--{{ principle.name }}">{{ chip }}</div>
+								{%- endfor -%}
+							</div>
+						</div>
+					</div>
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	</main>
+	{% include website/scripts.html %}
+</body>
+
+</html>

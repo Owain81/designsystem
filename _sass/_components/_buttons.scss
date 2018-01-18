@@ -1,0 +1,36 @@
+// Default bootstrap buttons override
+.btn-outline-primary {
+  @include button-outline-variant($btn-primary-bg);
+}
+
+.btn {
+  min-width: $splash-btn-min-width;
+  margin-bottom: $splash-btn-margin-bottom;
+  padding: $splash-btn-padding;
+
+  &:hover {
+    background-color: $splash-btn-hover-color;
+    color: $splash-btn-hover-font;
+	}
+}
+
+.btn-primary--splash {
+  margin-right: $splash-btn-primary-margin-right;
+  border-width: $splash-btn-primary-border-width;
+  border-color: $splash-btn-primary-border-color;
+  background-color: $splash-btn-primary-bg-color;
+  color: $splash-btn-primary-color;
+  font-weight: $splash-btn-primary-font-weight;
+}
+
+.btn-secondary--splash {
+  border-color: $splash-btn-secondary-border-color;
+  background-color: $splash-btn-secondary-bg-color;
+  color: $splash-btn-secondary-color;
+
+  &:hover {
+    border-color: $splash-btn-secondary-hover-border-color;
+    background-color: $splash-btn-secondary-hover-bg-color;
+    color: $splash-btn-secondary-hover-color;
+	}
+}

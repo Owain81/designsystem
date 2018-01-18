@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="327px" height="297px" viewBox="0 0 327 297" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Consider</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="319" height="289"></rect>
+        <filter x="-2.2%" y="-1.7%" width="104.4%" height="104.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="14.8846154" cy="14.8846154" r="14.8846154"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buttons-Usage-extra-large-1200" transform="translate(-353.000000, -3068.000000)">
+            <g id="Consider" transform="translate(357.000000, 3070.000000)">
+                <g id="bg-copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="bg-copy" fill="#495C6A" points="0 0 124 0 124 56.1408883 124 289 0 289"></polygon>
+                <rect id="Rectangle-3-Copy" fill="#FFFFFF" x="40" y="69" width="45" height="2" rx="1"></rect>
+                <rect id="Rectangle-2" fill="#0D78AA" x="13" y="258" width="96" height="17" rx="1"></rect>
+                <rect id="Rectangle-3-Copy-4" fill="#FFFFFF" x="39" y="265" width="45" height="2"></rect>
+                <rect id="Rectangle-3-Copy-3" fill="#B7DC00" x="44" y="61" width="38" height="3" rx="1.5"></rect>
+                <g id="Sidebar-top">
+                    <rect id="Profile-bg-Copy-2" fill="#3E4F5B" x="0" y="0" width="124" height="36"></rect>
+                    <path d="M111.197545,9.8046875 C111.264509,9.87165212 111.297991,9.94866028 111.297991,10.0357143 C111.297991,10.1227683 111.264509,10.1997765 111.197545,10.2667411 L107.25,14.2142857 L111.197545,18.1618304 C111.264509,18.228795 111.297991,18.3058031 111.297991,18.3928571 C111.297991,18.4799111 111.264509,18.5569193 111.197545,18.6238839 L110.695312,19.1261161 C110.628348,19.1930807 110.55134,19.2265625 110.464286,19.2265625 C110.377232,19.2265625 110.300224,19.1930807 110.233259,19.1261161 L105.552455,14.4453125 C105.485491,14.3783479 105.452009,14.3013397 105.452009,14.2142857 C105.452009,14.1272317 105.485491,14.0502235 105.552455,13.9832589 L110.233259,9.30245536 C110.300224,9.23549074 110.377232,9.20200893 110.464286,9.20200893 C110.55134,9.20200893 110.628348,9.23549074 110.695312,9.30245536 L111.197545,9.8046875 Z" id="" fill="#D2D6D9"></path>
+                </g>
+                <g id="Group-8" transform="translate(41.000000, 12.000000)">
+                    <g id="Group-2">
+                        <circle id="Mask-Copy" fill="#3E4F5B" cx="21.5" cy="21.5" r="21.5"></circle>
+                        <g id="person-profile-pic" transform="translate(7.000000, 7.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" xlink:href="#path-3"></use>
+                            <path d="M18.9922743,17.5777465 C19.5376135,17.065345 19.7281222,15.7694978 20.229926,15.3025178 C20.9382778,14.6410864 21.7094779,13.8273597 21.9281373,12.8102754 C22.2197923,11.4592099 21.6263349,11.2879146 21.6263349,10.8206378 C21.6263349,9.84333438 21.6165149,8.23577127 21.2970364,7.19256227 C21.2773963,5.81715324 21.0443342,5.21747134 20.5438398,4.70210116 C20.0777154,4.21998066 18.9258254,4.33516708 18.3268033,4.01602944 C17.395864,3.52322154 16.630556,3.33708266 15.6557539,3.31244226 L15.6557539,3.30769231 C15.6262937,3.30769231 15.597161,3.31006729 15.5696649,3.3109579 C15.5231834,3.31006729 15.4760472,3.30769231 15.4276017,3.30769231 L15.4298931,3.3163016 C13.05279,3.40120706 10.5238038,4.83124058 9.6557127,7.1302191 C9.33263356,7.98313301 9.457348,9.84363125 9.457348,10.8209346 C9.457348,11.2879146 8.86356324,11.4595068 9.15325427,12.8105723 C9.37551438,13.8276565 10.1421318,14.6413833 10.8527749,15.3028146 C11.3535967,15.7697946 11.5444327,17.0656419 12.0894446,17.5783403 C12.2095764,18.3332863 12.2236518,18.118054 12.2177597,18.8088756 C12.2177597,19.0419203 12.2256158,19.4038076 11.8357604,19.7609449 C11.0959844,20.4351417 9.3984278,21.8969405 8.00856556,22.4693102 C6.17254642,23.2212875 3.18856524,24.421542 2.50312682,24.7608669 C1.81441506,25.0966294 0,26.0148552 0,26.5996935 L0,29.3392304 L15.3713002,29.3392304 L15.7215481,29.3392304 L31.0967763,29.3392304 L31.0967763,26.5996935 C31.0967763,26.0148552 29.2784332,25.0966294 28.5929948,24.7599763 C27.9046104,24.4209482 24.9219385,23.2206938 23.0888654,22.4684196 C21.7330459,21.9132685 20.0888448,20.5099535 19.3196088,19.8143819 C19.0619965,19.5798528 18.8767252,19.3325582 18.8760705,18.7355482 C18.8714879,18.0405703 18.8898186,18.3065678 19.0050403,17.5777465" id="Fill-1" fill="#D2D6D9" mask="url(#mask-4)"></path>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="#495C6A" x="0" y="107" width="107" height="16"></rect>
+                <circle id="Oval-3-Copy" fill="#D2D6D9" cx="11.5" cy="118.5" r="1.5"></circle>
+                <circle id="Oval-3-Copy-2" fill="#D2D6D9" cx="11.5" cy="137.5" r="1.5"></circle>
+                <circle id="Oval-3-Copy-4" fill="#D2D6D9" cx="11.5" cy="157.5" r="1.5"></circle>
+                <circle id="Oval-3-Copy-3" fill="#D2D6D9" cx="11.5" cy="99.5" r="1.5"></circle>
+                <rect id="Rectangle-3-Copy-6" fill="#D2D6D9" x="20" y="98" width="75" height="3" rx="1.5"></rect>
+                <rect id="Rectangle-3-Copy-10" fill="#D2D6D9" x="19" y="136" width="75" height="3" rx="1.5"></rect>
+                <rect id="Rectangle-3-Copy-7" fill="#D2D6D9" x="20" y="117" width="41" height="3" rx="1.5"></rect>
+                <rect id="Rectangle-3-Copy-11" fill="#D2D6D9" x="20" y="156" width="41" height="3" rx="1.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

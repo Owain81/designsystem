@@ -1,0 +1,71 @@
+// Inline svg
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+// sass-lint:disable quotes
+@function url-encode($string) {
+  $map: ( "%": "%25",
+    "<": "%3C",
+    ">": "%3E",
+    " ": "%20",
+    "!": "%21",
+    "*": "%2A",
+    "'": "%27",
+    '"': "%22",
+    "(": "%28",
+    ")": "%29",
+    ";": "%3B",
+    ":": "%3A",
+    "@": "%40",
+    "&": "%26",
+    "=": "%3D",
+    "+": "%2B",
+    "$": "%24",
+    ",": "%2C",
+    "/": "%2F",
+    "?": "%3F",
+    "#": "%23",
+    "[": "%5B",
+    "]": "%5D");
+  $new: $string;
+
+  @each $search, $replace in $map {
+    $new: str-replace($new, $search, $replace);
+  }
+
+  @return $new;
+}
+
+@function inline-svg($string) {
+  @return url('data:image/svg+xml;charset=US-ASCII,#{url-encode($string)}');
+}
+
+@mixin dynamic-layout-paddings {
+  @include media-breakpoint-down(xl) {
+    padding-right: $grid-gutter-width-base;
+    padding-left: $grid-gutter-width-base;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-right: $grid-gutter-width-lg;
+    padding-left: $grid-gutter-width-lg;
+  }
+  @include media-breakpoint-down(md) {
+    padding-right: $grid-gutter-width-md;
+    padding-left: $grid-gutter-width-md;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-right: $grid-gutter-width-sm;
+    padding-left: $grid-gutter-width-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    padding-right: $grid-gutter-width-xs;
+    padding-left: $grid-gutter-width-xs;
+  }
+}

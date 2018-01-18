@@ -1,0 +1,142 @@
+.page--icon {
+  //   Workaround for alignment change when there's no scrollbar after filtering the icons.
+  //   A better solution is desirable for the next release.
+  //  -- START --
+  overflow-y: scroll;
+  //  -- END --
+
+  .tab-pane#icons {
+    max-width: $main-content-max-width-without-gutter;
+    margin-top: $search-height;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.icon-block {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  margin-bottom: 36px;
+  padding-left: 0;
+}
+
+.icon--no-result {
+  display: none;
+  padding: $search-no-result-padding;
+  background-position: top center;
+  background-size: $search-no-result-icon-size;
+  @include icon-no-result($search-no-result-icon-color);
+
+  h2 {
+    color: $search-no-result-h2;
+  }
+}
+
+.icon__content {
+  margin-bottom: 1.75rem;
+
+  .description {
+    margin-bottom: $icon-description-margin-bottom;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .description {
+      margin-bottom: 0;
+  	}
+  }
+
+  .icon__btn-download-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.icon {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: $icon-width;
+  height: $icon-height;
+  margin-right: $icon-margin;
+  padding: $icon-vertical-padding $icon-horizontal-padding;
+
+  &__img {
+    display: block;
+    width: 100%;
+    padding: $icon-img-padding 0 0;
+    text-align: center;
+
+    .fa {
+      color: $icon-img-color;
+      font-size: px-to-rem($icon-img-width);
+    }
+  }
+
+  &__text {
+    display: block;
+    width: 100%;
+    color: $icon-name-color;
+    font-size: $icon-name-font;
+    line-height: $icon-name-line-height;
+    text-align: center;
+  }
+
+  &__actions {
+    display: none;
+
+    a,
+    .copy-clipboard {
+      cursor: pointer;
+      color: $icon-font-color !important;
+      font-size: $icon-font-size;
+      line-height: $icon-font-line-height;
+
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+
+    .fa {
+      margin-right: $icon-action-icon-margin-right;
+      color: $icon-font-color;
+      font-size: $icon-font-size-icon;
+    }
+    @include media-breakpoint-down(xs) {
+      .download {
+        display: none;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $icon-background;
+
+    .icon__actions {
+      display: block;
+      position: absolute;
+      bottom: $icon-action-bottom;
+      left: 0;
+      width: $icon-action-width;
+      height: $icon-action-height;
+      padding: 0 $icon-action-padding;
+      background-color: $icon-background;
+
+      div {
+        line-height: $icon-action-line-height;
+      }
+
+      .copy-message {
+        position: absolute;
+        top: 24px;
+        left: 27px;
+        height: 20px;
+        background-color: $icon-background;
+        @include media-breakpoint-down(xs) {
+          top: 4px;
+        }
+      }
+    }
+  }
+}

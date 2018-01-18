@@ -1,0 +1,73 @@
+.typography {
+  &__fonts {
+    .row {
+      margin-bottom: $typography-fonts-margin-bottom;
+    }
+
+    .col-sm-3 {
+      max-width: $typography-fonts-column-max-width;
+      padding-right: 0;
+    }
+
+    .bigger {
+      font-size: $typography-fonts-big;
+    }
+  }
+}
+
+.headings__header {
+  display: inline-block;
+  min-width: $typography-headings-header-width;
+}
+
+// Hammerite base typography
+.hammerite {
+  font-family: $dagny;
+
+  .dagny--bold {
+    font-family: $dagny-bold;
+  }
+
+  .dagny--light {
+    font-family: $dagny-light;
+  }
+
+  .dagny--italic {
+    font-family: $dagny-italic;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    cursor: pointer;
+
+    &:hover:not(.is-disabled),
+    &:focus:not(.is-disabled),
+    &:active:not(.is-disabled) {
+      text-decoration: underline !important;
+    }
+  }
+
+  .is-disabled {
+    cursor: not-allowed;
+  }
+}
+
+.icon__btn-download {
+  display: flex;
+  justify-content: flex-start;
+  max-width: $paragraph-max-width;
+  margin-bottom: $paragraph-margin-bottom;
+}

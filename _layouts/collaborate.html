@@ -1,0 +1,38 @@
+{% capture paragraph-style %} style="font-size: {{ page.font-size }}; line-height: {{ page.line-height }}; color: {{ page.color-hex }}" {% endcapture %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+
+{% include head.html %}
+
+<body class="page--default">
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% include website/header.html %}
+		<div class="container-fluid main-content">
+			<div class="row">
+				<div class="col-12">
+					{{ page.introduction | markdownify }}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-6 collaborate">
+					<div class="collaborate-img collaborate-img--grow"></div>
+					{{ page.contribute | markdownify }}
+
+					<a href="mailto://designsystem@unit4.com" class="btn btn-primary--splash">Make a suggestion</a>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-6 collaborate">
+					<div class="collaborate-img collaborate-img--bug"></div>
+					{{ page.bugs | markdownify }}
+
+					<a href="https://github.com/UXCenter/designsystem/issues/new" target="_blank" class="btn btn-primary--splash">Report a bug</a>
+
+				</div>
+			</div>
+		</div>
+	</main>
+
+	{% include website/scripts.html %}
+
+</body>
+
+</html>

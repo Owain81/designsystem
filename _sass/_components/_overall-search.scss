@@ -1,0 +1,208 @@
+// Search box
+.sidebar__search {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: $sidebar-search-height;
+}
+
+.search-input {
+  input {
+    width: calc(100% - #{$overall-search-input-right-spacing});
+    padding: $overall-search-input-padding;
+    border: 0;
+    background: transparent;
+    line-height: $overall-search-input-line-height;
+    @include dynamic-sidebar-spacing(padding-left);
+
+    // Placeholder should use vendor prefixes
+    // sass-lint:disable no-vendor-prefixes
+    &::-webkit-input-placeholder {
+      color: $overall-search-input-placeholder-color;
+    }
+
+    &:focus {
+      outline: none;
+
+      &::-webkit-input-placeholder {
+        color: $overall-search-input-hover-placeholder-color;
+      }
+    }
+  }
+
+  i {
+    color: $overall-search-input-icon-color;
+  }
+}
+
+.page--search-results .search-input {
+  background: $sidebar-item-active-background;
+}
+
+// Floating lists
+.search-list,
+.recent-search {
+  position: absolute;
+  width: calc(100% -  #{$overall-search-list-margin * 2});
+  margin: 0 $overall-search-list-margin;
+  padding: 0;
+  list-style: none;
+  box-shadow: $overall-search-list-shadow;
+  z-index: $overall-search-list-z-index;
+
+  h1,
+  h2 {
+    margin: 0;
+  }
+
+  & &__item {
+    margin: 0;
+    padding: 0 $overall-search-list-item-padding;
+    background-color: $overall-search-list-background-color;
+
+    &:not(:last-child) a {
+      border-bottom: $overall-search-list-separator;
+    }
+
+    &:hover {
+      background-color: $sidebar-item-hover-background-color;
+    }
+
+    a {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      min-height: $overall-search-list-item-height;
+      padding: $overall-search-list-item-vertical-padding 0;
+
+      &:hover {
+        // Override bootstrap
+        // scss-lint:disable ImportantRule
+        background-color: transparent !important;
+        text-decoration: none;
+      }
+    }
+  }
+
+  strong {
+    color: $overall-search-hightlight-color;
+    font-weight: normal;
+  }
+}
+
+
+.search-list__item-title {
+  color: $overall-search-list-item-title-color;
+  font-size: $overall-search-list-item-title-size;
+  font-weight: normal;
+  line-height: $overall-search-list-item-title-line-height;
+}
+
+.search-list__item-section {
+  color: $overall-search-list-item-section-color;
+  font-size: $overall-search-list-item-section-size;
+  font-weight: normal;
+}
+
+.search-list__more-results-item a {
+  text-align: center;
+}
+
+.recent-search {
+  & &__item a {
+    color: $overall-search-recent-text-color;
+  }
+}
+
+
+// Results page
+.search-results > h1 {
+  margin: 0;
+  font-size: $overall-search-results-title-font-size;
+
+  strong {
+    color: $overall-search-hightlight-color;
+  }
+}
+
+.search-results-list {
+  max-width: none;
+  margin: 0;
+  padding: $overall-search-results-list-padding;
+  list-style: none;
+
+  &__item {
+    > a {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      height: $overall-search-results-list-item-height;
+
+      &:hover {
+        text-decoration: none;
+
+        .search-results-list__item-title {
+          border-bottom: $overall-search-results-list-item-hover;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: $overall-search-list-separator;
+    }
+
+    strong {
+      color: $overall-search-hightlight-color;
+      font-weight: normal;
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    border-bottom: 1px solid transparent;
+    font-size: $overall-search-results-item-title-size;
+    font-weight: normal;
+  }
+
+  &__item-description {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    color: $overall-search-results-item-description-color;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+// Remove overflow: hidden from sidebar plugin
+// sass-lint:disable class-name-format
+// scss-lint:disable SelectorFormat, IdSelector
+#sidebar-wrapper .mCSB_container {
+  overflow: initial;
+}
+
+.search-results-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin: $overall-search-results-empty-state-title-padding;
+  }
+
+  p {
+    margin: 0;
+  }
+
+}
+
+.search-results-empty__icon {
+  width: $overall-search-results-empty-state-icon-size;
+  height: $overall-search-results-empty-state-icon-size;
+  background-image: $overall-search-empty-state-icon;
+  background-size: 100%;
+}

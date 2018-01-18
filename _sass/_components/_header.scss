@@ -1,0 +1,85 @@
+header {
+  padding-top: $header-padding-top;
+  transition: left $navigation-motion-time $navigation-motion-easing;
+  background-color: $header-background-color;
+  overflow: hidden;
+
+  @include media-breakpoint-down($sidebar-overlay-breakpoint) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: $header-mobile-padding-top;
+    z-index: 10;
+  }
+
+  .container-fluid {
+    max-width: $main-content-max-width-without-gutter;
+    padding-right: 0;
+    padding-left: 0;
+    @include media-breakpoint-down($sidebar-overlay-breakpoint) {
+      max-width: 100%;
+    }
+  }
+
+  &.tabs-in {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: $sidebar-width;
+    transition: top $header-motion-time $header-motion-easing, left $navigation-motion-time $navigation-motion-easing;
+    z-index: 10;
+    @include media-breakpoint-down($sidebar-overlay-breakpoint) {
+      left: 0;
+    }
+  }
+
+  .breadcrumbs {
+    margin-bottom: $header-breadcrumbs-margin-bottom;
+    color: $header-breadcrumbs-color;
+    line-height: $header-breadcrumbs-line-height;
+
+    &__element::first-letter,
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  h1 {
+    margin-bottom: $header-h1-margin-bottom;
+    color: $header-h1-color;
+
+    &.tabs-in {
+      margin-bottom: $header-h1-with-tabs-margin-bottom;
+    }
+    @include media-breakpoint-down($sidebar-overlay-breakpoint) {
+      margin-bottom: $header-mobile-h1-margin-bottom;
+      padding-left: $header-mobile-h1-padding-left;
+      font-size: $header-mobile-h1-font-size;
+    }
+  }
+
+  .nav-tabs {
+    .nav-item {
+      a {
+        color: $header-nav-link-color;
+
+        &:hover {
+          color: $header-nav-link-hover-color;
+        }
+      }
+
+      .nav-link:active,
+      .nav-link.active {
+        border-bottom: $nav-tabs-border-bottom-width solid $header-nav-link-border-bottom-color;
+      }
+
+      .nav-link.active,
+      .nav-link.active:focus,
+      .nav-link.active:hover {
+        border-bottom: $nav-tabs-border-bottom-width solid $header-nav-link-border-bottom-color;
+        color: $header-nav-link-active-color;
+      }
+    }
+  }
+}

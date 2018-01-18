@@ -1,0 +1,70 @@
+.search {
+  // With tabs on desktop
+  header.tabs-in + .main-content & {
+    top: $search-withtabs-top;
+
+    // With tabs on mobile
+    @include media-breakpoint-down($sidebar-overlay-breakpoint) {
+      top: $header-mobile-withtabs-height;
+    }
+  }
+
+  // Without tabs on mobile
+  header + .main-content & {
+    @include media-breakpoint-down($sidebar-overlay-breakpoint) {
+      top: $search-mobile-top;
+    }
+  }
+
+  // Without tabs on desktop
+  position: fixed;
+  top: $search-top;
+  right: 0;
+  left: $sidebar-width;
+  height: $search-height;
+  padding-top: $search-padding;
+  transition: top $header-motion-time $header-motion-easing, left $navigation-motion-time $navigation-motion-easing;
+  background: $search-background;
+  box-shadow: 0 $search-offset-y $search-blur-radius 0 $search-box-color;
+  z-index: 2;
+  @include media-breakpoint-down($sidebar-overlay-breakpoint) {
+    top: $header-mobile-withtabs-height;
+    left: 0;
+  }
+
+  &--transition-left {
+    transition: left $navigation-motion-time $navigation-motion-easing;
+  }
+
+  .container-fluid {
+    max-width: $main-content-max-width-with-gutter;
+  }
+
+  &__field {
+    width: 80%;
+    height: $search-height;
+    margin-left: $search-field-margin;
+    border: 0;
+    background: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  i {
+    color: $search-icon-color;
+    font-size: $search-icon-size;
+
+    @include media-breakpoint-down(xs) {
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &::placeholder {
+    color: $search-placeholder-color;
+    font-family: $search-placeholder-font;
+    font-size: $search-placeholder-size;
+  }
+}

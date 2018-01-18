@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--default">
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% include website/header.html breadcrumbs="true" %}
+		<div class="container-fluid main-content">
+			<div class="row">
+				<div class="col">
+					<div class="current-version">
+						{{ site.title }} current version: <strong>{{ site.version }} </strong> ({{ site.updated }})
+					</div>
+					<div class="status-list">
+						<span><i class="fa fa-check" aria-hidden="true"></i> Ready</span>
+						<span><i class="fa fa-wrench" aria-hidden="true"></i> In progress</span>
+						<span><i class="fa fa-eye" aria-hidden="true"></i> Under review</span>
+						<span><i class="fa fa-times" aria-hidden="true"></i> Deprecated</span>
+					</div>
+					<table class="table component-table">
+						<thead>
+							<tr>
+								<th class="w-50">Component</th>
+								<th class="w-25">Version</th>
+								<th class="w-25">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+						{% for component-status in site.data.component-status %}
+							<tr>
+								<td class="w-50">
+									<a href="{{ site.baseurl }}/components/{{ component-status.name | slugify }}/">
+									<span class="component-name">{{ component-status.name }}</span></a>
+									{% if component-status.tag %}
+										<span class="tags">{{ component-status.tag }}</span>
+									{% endif %}
+								</td>
+								<td class="w-25">{{ component-status.version }}</td>
+								<td class="w-25">
+									{% if component-status.status == 'ready' %}
+										<i class="fa fa-check" aria-hidden="true" title="Ready"></i>
+									{% endif %}
+									{% if component-status.status == 'in progress' %}
+										<i class="fa fa-wrench" aria-hidden="true" title="In progress"></i>
+									{% endif %}
+									{% if component-status.status == 'deprecated' %}
+										<i class="fa fa-times" aria-hidden="true" title="Deprecated"></i>
+									{% endif %}
+									{% if component-status.status == 'under review' %}
+										<i class="fa fa-eye" aria-hidden="true" title="Under review"></i>
+									{% endif %}
+								</td>
+							</tr>
+						{% endfor %}
+						</tbody>
+					</table>
+
+					<div class="status-description">
+						<h2>Status descriptions</h2>
+							<div class="row">
+								<div class="col-12 col-sm-3"><i class="fa fa-check" aria-hidden="true"></i> Ready</div>
+								<div class="col-12 col-sm-9">{{ page.ready }}</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-sm-3"><i class="fa fa-wrench" aria-hidden="true"></i> In progress</div>
+								<div class="col-12 col-sm-9">{{ page.in-progress }}</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-sm-3"><i class="fa fa-eye" aria-hidden="true"></i> Under review</div>
+								<div class="col-12 col-sm-9">{{ page.under-review }}</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-sm-3"><i class="fa fa-times" aria-hidden="true"></i> Deprecated</div>
+								<div class="col-12 col-sm-9">{{ page.deprecated }}</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-sm-3"><span class="tags">New</span></div>
+								<div class="col-12 col-sm-9">{{ page.new }}</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-sm-3"><span class="tags">Updated</span></div>
+								<div class="col-12 col-sm-9">{{ page.updated }}</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	{% include website/scripts.html %}
+
+</body>
+
+</html>

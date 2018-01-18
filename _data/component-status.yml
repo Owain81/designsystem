@@ -1,0 +1,94 @@
+# Table of components statuses and versions
+#
+# For statuses use those expressions:
+# ready
+# in progress
+# deprecated
+# under review
+#
+# Be careful with indentations in this file. Use only spaces, not tabs. Jekyll doesn't accept tabs in yaml code.
+
+- name: Breadcrumb
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Button
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Checkbox
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Dropdown input
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: File input
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Icon button
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Navigation bar
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Navigation side drawer
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Panel
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Modal
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Radio button
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Range slider
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Switch
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Tabs
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Table
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Text area
+  tag:
+  version: 1.0.0
+  status: ready
+
+- name: Text input
+  tag:
+  version: 1.0.0
+  status: ready

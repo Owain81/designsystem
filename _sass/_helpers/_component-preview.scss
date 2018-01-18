@@ -1,0 +1,21 @@
+// Component section
+
+$component-section-margin-bottom: px-to-rem(set-space(xxxxl));
+
+// Component preview
+
+$component-preview-background-color: $color-grey-blue-background;
+$component-preview-border: 1px solid $color-grey-34;
+$component-preview-min-width: 1200px;
+$component-preview-max-width: 480px;
+
+// Size switcher tabs
+
+$component-preview-tabs-border-width: 1px 1px 0 1px;
+$component-preview-tabs-border-style: solid;
+$component-preview-tabs-border-color: $color-grey-34;
+$component-preview-tabs-background-color: $color-grey-8;
+$component-preview-tabs-text-color: $color-darkgrey-unit4;
+$component-preview-tabs-icon-margin-right: 12px;
+$component-preview-tabs-active-border-bottom: $nav-tabs-border-bottom-width solid $color-blue;
+$component-preview-tabs-default-border-bottom: $nav-tabs-border-bottom-width solid transparent;

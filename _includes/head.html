@@ -1,0 +1,114 @@
+{%- assign title = page.title | default: site.title | escape -%}
+{%- assign html-title = page.title | append: ' | Unit4 Design System' -%}
+{%- assign description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 -%}
+{%- assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url -%}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ html-title }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="{{ url }}">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.baseurl }}/images/fav/ds-apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/images/fav/ds-apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/images/fav/ds-apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/images/fav/ds-apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.baseurl }}/images/fav/ds-apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.baseurl }}/images/fav/ds-apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.baseurl }}/images/fav/ds-apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}/images/fav/ds-apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/fav/ds-favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/fav/ds-favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/fav/ds-favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/fav/ds-favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/fav/ds-favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Unit4 Design System"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/fav/ds-mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="{{ site.baseurl }}/images/fav/ds-mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="{{ site.baseurl }}/images/fav/ds-mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="{{ site.baseurl }}/images/fav/ds-mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/images/fav/ds-mstile-310x310.png" />
+
+  <!-- Stylesheets specific to the styleguide page -->
+  {%- if page.layout == "default-page" or
+        page.layout == "component" or
+        page.layout == "component-status" or
+        page.layout == "typography" or
+        page.layout == "colors" or
+        page.layout == "icons" or
+        page.layout == "design-pattern" or
+        page.layout == "design-pattern-overview" or
+        page.layout == "design-pattern-variations" or
+        page.layout == "home-page" or
+        page.layout == "principles" or
+        page.layout == "get-started" or
+        page.layout == "collaborate" or
+        page.layout == "vision" or
+        page.layout == "ui-design-kit" or
+        page.layout == "search-results" -%}
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" />
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107062346-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-107062346-1');
+    </script>
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'ian2zyj',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  {% endif %}
+
+  <!-- Stylesheet specific to the rendered iframe of a component -->
+  {% if page.layout == "component-iframe" %}
+    <link rel="stylesheet" href="{{ "/css/uilibrary/design-system.min.css" | prepend: site.baseurl }}">
+    <style>
+			body {
+				padding: 36px;
+				background-color: #e8eef2;
+			}
+
+			body > p {
+				margin: 0;
+			}
+		</style>
+
+    {% if page.background == "white" %}
+			<style>
+				body {
+					padding: 0;
+					background-color: #fff;
+				}
+			</style>
+		{% endif %}
+  {% endif %}
+  <!-- jQuery -->
+  <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-cookies.js"></script>
+
+  {%- if page.layout == "home-page" -%}
+  <script type="text/javascript" src="{{ "/js/dots/dots.js" | prepend: site.baseurl }}"></script>
+  {%- endif -%}
+
+  {%- if page.layout == "icons" -%}
+  <script type="text/javascript" src="{{ "/js/filter/filter.js" | prepend: site.baseurl }}"></script>
+  {%- endif -%}
+</head>

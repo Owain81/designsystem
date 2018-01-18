@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="208px" height="150px" viewBox="0 0 208 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Small modal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="198" height="140"></rect>
+        <filter x="-4.3%" y="-4.6%" width="108.6%" height="112.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buttons-Usage-extra-large-1200" transform="translate(-842.000000, -4072.000000)">
+            <g id="Group-Copy-6" transform="translate(847.000000, 4075.000000)">
+                <g id="Small-modal">
+                    <g id="Panel">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M190.834101,17.8940092 L189.949309,18.7788018 C189.83871,18.8894009 189.672811,19 189.506912,19 C189.341014,19 189.175115,18.9447005 189.064516,18.7788018 L179.221198,8.93548387 C179.110599,8.82488479 179,8.65898618 179,8.49308756 C179,8.32718894 179.110599,8.21658986 179.221198,8.10599078 L180.105991,7.22119816 C180.21659,7.05529954 180.382488,7 180.548387,7 C180.714286,7 180.880184,7.05529954 180.990783,7.22119816 L190.778802,17.0092166 C190.889401,17.1198157 191,17.2857143 191,17.4516129 C191,17.6175115 190.9447,17.7834101 190.834101,17.8940092" id="Fill-1" fill="#4C5358"></path>
+                    <path d="M189.899083,7.16589862 L190.779817,8.10599078 C190.889908,8.21658986 191,8.38248848 191,8.5483871 C190.944954,8.76958525 190.889908,8.88018433 190.779817,8.99078341 L180.981651,18.7788018 C180.87156,18.8894009 180.706422,19 180.541284,19 C180.376147,19 180.211009,18.9447005 180.100917,18.7788018 L179.220183,17.8940092 C179.110092,17.7834101 179,17.6175115 179,17.4516129 C179,17.2857143 179.055046,17.1198157 179.220183,17.0092166 L189.018349,7.22119816 C189.12844,7.11059908 189.293578,7 189.458716,7 C189.568807,7.05529954 189.788991,7.05529954 189.899083,7.16589862" id="Fill-3" fill="#4C5358"></path>
+                    <rect id="Rectangle-2-Copy-27" fill="#4C5358" x="16" y="12" width="77" height="8" rx="4"></rect>
+                    <rect id="Rectangle-2-Copy-35" fill="#D8D8D8" x="16" y="87" width="167" height="6" rx="3"></rect>
+                    <rect id="Rectangle-2-Copy-36" fill="#D8D8D8" x="16" y="68" width="167" height="6" rx="3"></rect>
+                    <rect id="Rectangle-2-Copy-37" fill="#D8D8D8" x="16" y="48" width="167" height="6" rx="3"></rect>
+                    <rect id="Rectangle-2-Copy-38" fill="#D8D8D8" x="16" y="106" width="126" height="6" rx="3"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

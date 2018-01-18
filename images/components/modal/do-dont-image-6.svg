@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="371px" height="333px" viewBox="0 0 371 333" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>DontAllowInteract</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="17" width="200" height="108" rx="4"></rect>
+        <filter x="-3.5%" y="-4.6%" width="107.0%" height="113.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.477306548   0 0 0 0 0.45838868   0 0 0 0 0.45838868  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="351" height="256"></rect>
+        <filter x="-5.0%" y="-4.9%" width="110.0%" height="113.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="111" height="44" rx="3"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buttons-Usage-extra-large-1200" transform="translate(-759.000000, -2986.000000)">
+            <g id="Group-11" transform="translate(305.000000, 2971.000000)">
+                <g id="do" transform="translate(444.000000, 0.000000)">
+                    <g id="DontAllowInteract" transform="translate(20.000000, 15.000000)">
+                        <g id="Dropdown" transform="translate(18.000000, 0.000000)">
+                            <g id="Group-4">
+                                <g id="Group" transform="translate(0.000000, 15.000000)">
+                                    <g id="Group-2" transform="translate(0.000000, 22.000000)" stroke="#979797" stroke-linecap="square">
+                                        <path d="M0.5,1.5 L199.5,1.5" id="Line"></path>
+                                    </g>
+                                    <text id="Select-item" font-family="DagnyCompPro" font-size="16" font-weight="normal" fill="#000000">
+                                        <tspan x="0" y="15">Select item</tspan>
+                                    </text>
+                                    <text id="" font-family="FontAwesome" font-size="16" font-weight="normal" fill="#4C5358">
+                                        <tspan x="185" y="17"></tspan>
+                                    </text>
+                                </g>
+                                <g id="Rectangle-2">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <use fill="#EFF0F0" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    <rect stroke="#9C9FA2" stroke-width="1" x="0.5" y="17.5" width="199" height="107" rx="4"></rect>
+                                </g>
+                                <rect id="Rectangle-4" fill="#4095FD" x="1" y="23" width="198" height="21"></rect>
+                                <rect id="Rectangle-2-Copy-28" fill="#4C5358" x="0" y="0" width="42" height="4" rx="2"></rect>
+                                <image id="Captura-de-pantalla-2017-09-12-a-las-13.24.11" x="6" y="27" width="13" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAABGdBTUEAALGPC/xhBQAAASJJREFUKBVjtJ709z8DiYAJl3oWTiaGFl8mhoXh/xnCBb+gKMOqCSQ4OY6BwUGBgYHl+VuGle95CGsyNmVi0GVjYPj+9BVD9CERFA0gDoZNzP+ZGLKNQFLfGfrWcoEYGABDk4Y2A4MK0Ja7pz8ybGfEoYldjIlhdTojw7rgTww8DP8Zgg1BBn9jmHWCH6sNIFuYfr76x3DwKSODmJQAw/Kwfwx2QgwMr65+YDjKwA7WBFYEUohkBJg9bct/hlMfGRgExVkZOBh+M2w4zQVWhKwQSQ/EgH9AZ1WuZ2AAx8brDwxLPvMhq8Fgww37+fkfw6wrDAw37v6BK/rPyMCAjGESjOjJCGYKSDEuAFODSx6rOIomGAefLSBTYOrgJhLSAFIIAObZSRIDL6yoAAAAAElFTkSuQmCC"></image>
+                            </g>
+                            <rect id="Rectangle-2-Copy-31" fill="#000000" x="27" y="50.75" width="42" height="4" rx="2"></rect>
+                            <rect id="Rectangle-2-Copy-32" fill="#000000" x="27" y="70.5" width="42" height="4" rx="2"></rect>
+                            <rect id="Rectangle-2-Copy-33" fill="#000000" x="27" y="90.25" width="42" height="4" rx="2"></rect>
+                            <rect id="Rectangle-2-Copy-34" fill="#000000" x="27" y="110" width="42" height="4" rx="2"></rect>
+                            <rect id="Path" fill="#FFFFFF" x="27" y="32" width="42" height="4" rx="2"></rect>
+                        </g>
+                        <g id="Send-message" transform="translate(0.000000, 62.000000)">
+                            <g id="Group-Copy-5">
+                                <g id="Panel">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                </g>
+                                <rect id="Rectangle-2-Copy-39" fill="#4C5358" x="24" y="24" width="118" height="8" rx="4"></rect>
+                                <g id="X" transform="translate(320.000000, 16.000000)" fill="#4C5358">
+                                    <path d="M14.7926267,13.6175115 L13.6866359,14.7235023 C13.5483871,14.8617512 13.3410138,15 13.1336406,15 C12.9262673,15 12.718894,14.9308756 12.5806452,14.7235023 L0.276497696,2.41935484 C0.138248848,2.28110599 0,2.07373272 0,1.86635945 C0,1.65898618 0.138248848,1.52073733 0.276497696,1.38248848 L1.38248848,0.276497696 C1.52073733,0.069124424 1.7281106,0 1.93548387,0 C2.14285714,0 2.35023041,0.069124424 2.48847926,0.276497696 L14.7235023,12.5115207 C14.8617512,12.6497696 15,12.8571429 15,13.0645161 C15,13.2718894 14.9308756,13.4792627 14.7926267,13.6175115" id="Fill-1"></path>
+                                    <path d="M13.6238532,0.207373272 L14.7247706,1.38248848 C14.8623853,1.52073733 15,1.7281106 15,1.93548387 C14.9311927,2.21198157 14.8623853,2.35023041 14.7247706,2.48847926 L2.47706422,14.7235023 C2.33944954,14.8617512 2.13302752,15 1.9266055,15 C1.72018349,15 1.51376147,14.9308756 1.37614679,14.7235023 L0.275229358,13.6175115 C0.137614679,13.4792627 0,13.2718894 0,13.0645161 C0,12.8571429 0.0688073394,12.6497696 0.275229358,12.5115207 L12.5229358,0.276497696 C12.6605505,0.138248848 12.8669725,0 13.0733945,0 C13.2110092,0.069124424 13.4862385,0.069124424 13.6238532,0.207373272" id="Fill-3"></path>
+                                </g>
+                            </g>
+                            <g id="Buttons/Button-Container" transform="translate(216.000000, 188.000000)">
+                                <g id="Button-default">
+                                    <g id="Bg">
+                                        <use fill="#0D78AA" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                        <rect stroke="#0D78AA" stroke-width="1" x="0.5" y="0.5" width="110" height="43" rx="3"></rect>
+                                    </g>
+                                </g>
+                                <rect id="Rectangle-5" fill="#FFFFFF" x="15" y="19" width="82" height="6" rx="3"></rect>
+                            </g>
+                            <g id="Text-area" transform="translate(24.000000, 61.000000)">
+                                <path d="M0.986885246,55.5 L301.400372,55.5" id="Line-Copy" stroke="#0D78AA" stroke-linecap="square"></path>
+                                <rect id="Rectangle-2-Copy-9" fill="#D8D8D8" x="1" y="37" width="300" height="4" rx="2"></rect>
+                                <rect id="Rectangle-2-Copy-29" fill="#D8D8D8" x="232.465574" y="68" width="69.5409836" height="4" rx="2"></rect>
+                                <rect id="Rectangle-2-Copy-26" fill="#D8D8D8" x="1" y="18" width="300" height="4" rx="2"></rect>
+                                <rect id="Rectangle-2-Copy-28" fill="#D8D8D8" x="1" y="0" width="300" height="4" rx="2"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

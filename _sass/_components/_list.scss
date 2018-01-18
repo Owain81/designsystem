@@ -1,0 +1,16 @@
+ul,
+ol {
+  max-width: $paragraph-max-width;
+  margin-bottom: $list-margin-bottom;
+  margin-left: 0;
+  padding-left: $list-padding-left;
+
+  .page--icon &,
+  &.component-preview-nav-tabs {
+    max-width: 100%;
+  }
+}
+
+li {
+  margin-bottom: $list-element-margin-bottom;
+}

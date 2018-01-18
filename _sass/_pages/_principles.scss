@@ -1,0 +1,73 @@
+@each $name,
+$color in (principle__chip--useful: $principle-color-useful, principle__chip--acceptable: $principle-color-acceptable, principle__chip--identifiable: $principle-color-identifiable, principle__chip--friendly: $principle-color-friendly) {
+  .#{$name} {
+    background-color: $color;
+  }
+}
+
+.principle {
+  &__intro {
+    display: block;
+    max-width: $paragraph-max-width;
+  }
+
+  &__section {
+    display: flex;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+
+    h2 {
+      text-transform: capitalize;
+    }
+  }
+
+  &__model img {
+    width: $principles-model-width;
+    max-width: $principles-model-max-width;
+    margin: $principles-model-margin;
+  }
+
+  &__icon {
+    width: $principles-icon-width;
+    height: $principles-icon-height;
+    margin-right: $principles-icon-margin-right;
+    margin-bottom: $principles-icon-margin-bottom;
+    background-repeat: no-repeat;
+
+    &--useful {
+      @include icon-principle-useful;
+    }
+
+    &--acceptable {
+      @include icon-principle-acceptable;
+    }
+
+    &--identifiable {
+      @include icon-principle-identifiable;
+    }
+
+    &--friendly {
+      @include icon-principle-friendly;
+    }
+  }
+
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: $principles-chips-min-height;
+    margin-top: $principles-chips-margin-top;
+    margin-right: $principles-chips-margin-right;
+    padding: $principles-chips-padding;
+    border-radius: $principles-chips-border-radius;
+    color: $principles-chips-color;
+    font-weight: $principles-chips-font-weight;
+  }
+}

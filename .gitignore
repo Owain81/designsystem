@@ -1,0 +1,8 @@
+_config.yml
+_site
+.sass-cache
+.jekyll-metadata
+node_modules
+bower_components
+css/main.css
+js/minified/

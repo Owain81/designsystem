@@ -1,0 +1,26 @@
+// Table header font
+
+$table-head-font-size: 18px;
+$table-head-font-weight: $open-sans-bold;
+$table-head-line-height: 1.1111112;
+$table-head-mobile-font-size: 1rem;
+
+// Table header border
+
+$table-head-border-bottom-width: 1px;
+$table-head-border-bottom-color: $color-blue;
+$table-head-border-bottom-style: solid;
+
+// Table border
+
+$table-border-bottom: 1px solid $color-grey-34;
+
+// Table font
+
+$table-font-color: $color-grey-120;
+
+// Table padding
+
+$table-padding: px-to-rem(5px) px-to-rem(16px) px-to-rem(6px);
+$table-header-padding: px-to-rem(4px) px-to-rem(16px) px-to-rem(10px);
+$table-margin-bottom: 48px;

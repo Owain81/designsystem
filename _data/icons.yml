@@ -1,0 +1,1552 @@
+# Icons are part of Hammerite ecosystem
+
+application:
+ - name: adjust
+   tag1:
+   tag2:
+   status: new
+ - name: anchor
+   tag1:
+   tag2:
+ - name: archive
+   tag1:
+   tag2:
+ - name: asterisk
+   tag1:
+   tag2:
+ - name: at
+   tag1:
+   tag2:
+ - name: balance-scale
+   tag1:
+   tag2:
+ - name: ban
+   tag1: User
+   tag2: Form
+ - name: barcode
+   tag1:
+   tag2:
+ - name: battery-empty
+   tag1:
+   tag2:
+ - name: battery-full
+   tag1:
+   tag2:
+ - name: battery-half
+   tag1:
+   tag2:
+ - name: battery-quarter
+   tag1:
+   tag2:
+ - name: battery-three-quarters
+   tag1:
+   tag2:
+ - name: bed
+   tag1:
+   tag2:
+ - name: beer
+   tag1:
+   tag2:
+ - name: bell-o
+   tag1:
+   tag2:
+ - name: bell-slash-o
+   tag1:
+   tag2:
+ - name: bell
+   tag1:
+   tag2:
+ - name: binoculars
+   tag1:
+   tag2:
+ - name: birthday-cake
+   tag1:
+   tag2:
+ - name: bluetooth-b
+   tag1:
+   tag2:
+ - name: bluetooth
+   tag1:
+   tag2:
+ - name: bomb
+   tag1:
+   tag2:
+ - name: book
+   tag1:
+   tag2:
+ - name: bookmark-o
+   tag1:
+   tag2:
+ - name: bookmark
+   tag1:
+   tag2:
+ - name: briefcase
+   tag1:
+   tag2:
+ - name: bug
+   tag1:
+   tag2:
+ - name: building-o
+   tag1:
+   tag2:
+ - name: building
+   tag1:
+   tag2:
+ - name: bullhorn
+   tag1:
+   tag2:
+ - name: bullseye
+   tag1:
+   tag2:
+ - name: calculator
+   tag1:
+   tag2:
+ - name: calendar-check-o
+   tag1:
+   tag2:
+ - name: calendar-minus-o
+   tag1:
+   tag2:
+ - name: calendar-o
+   tag1:
+   tag2:
+ - name: calendar-plus-o
+   tag1:
+   tag2:
+ - name: calendar-times-o
+   tag1:
+   tag2:
+ - name: calendar
+   tag1:
+   tag2:
+ - name: camera-retro
+   tag1:
+   tag2:
+ - name: camera
+   tag1:
+   tag2:
+ - name: cart-arrow-down
+   tag1:
+   tag2:
+ - name: cart-plus
+   tag1:
+   tag2:
+ - name: cc
+   tag1:
+   tag2:
+ - name: certificate
+   tag1:
+   tag2:
+ - name: check-circle-o
+   tag1:
+   tag2:
+ - name: check-circle
+   tag1:
+   tag2:
+ - name: check
+   tag1:
+   tag2:
+ - name: child
+   tag1:
+   tag2:
+ - name: circle-thin
+   tag1:
+   tag2:
+ - name: clock-o
+   tag1:
+   tag2:
+ - name: clone
+   tag1:
+   tag2:
+ - name: close
+   tag1:
+   tag2:
+ - name: cloud-download
+   tag1:
+   tag2:
+ - name: cloud-upload
+   tag1:
+   tag2:
+ - name: cloud
+   tag1:
+   tag2:
+ - name: code-fork
+   tag1:
+   tag2:
+ - name: coffee
+   tag1:
+   tag2:
+ - name: comment-o
+   tag1:
+   tag2:
+ - name: comment
+   tag1:
+   tag2:
+ - name: commenting-o
+   tag1:
+   tag2:
+ - name: commenting
+   tag1:
+   tag2:
+ - name: comments-o
+   tag1:
+   tag2:
+ - name: comments
+   tag1:
+   tag2:
+ - name: compass
+   tag1:
+   tag2:
+ - name: copy
+   tag1:
+   tag2:
+ - name: copyright
+   tag1:
+   tag2:
+ - name: creative-commons
+   tag1:
+   tag2:
+ - name: crop
+   tag1:
+   tag2:
+ - name: crosshairs
+   tag1:
+   tag2:
+ - name: cube
+   tag1:
+   tag2:
+ - name: cubes
+   tag1:
+   tag2:
+ - name: cutlery
+   tag1:
+   tag2:
+ - name: dashboard
+   tag1:
+   tag2:
+ - name: database
+   tag1:
+   tag2:
+ - name: desktop
+   tag1:
+   tag2:
+ - name: diamond
+   tag1:
+   tag2:
+ - name: download
+   tag1:
+   tag2:
+ - name: edit
+   tag1:
+   tag2:
+ - name: eject
+   tag1:
+   tag2:
+ - name: ellipsis-h
+   tag1:
+   tag2:
+ - name: ellipsis-v
+   tag1:
+   tag2:
+ - name: envelope-o
+   tag1:
+   tag2:
+ - name: envelope-square
+   tag1:
+   tag2:
+ - name: envelope
+   tag1:
+   tag2:
+ - name: exclamation-circle
+   tag1:
+   tag2:
+ - name: exclamation-triangle
+   tag1:
+   tag2:
+ - name: expand
+   tag1:
+   tag2:
+ - name: external-link-square
+   tag1:
+   tag2:
+ - name: external-link
+   tag1:
+   tag2:
+ - name: eye-slash
+   tag1:
+   tag2:
+ - name: eye
+   tag1:
+   tag2:
+ - name: eyedropper
+   tag1:
+   tag2:
+ - name: fax
+   tag1:
+   tag2:
+ - name: female
+   tag1:
+   tag2:
+ - name: film
+   tag1:
+   tag2:
+ - name: filter
+   tag1:
+   tag2:
+ - name: fire-extinguisher
+   tag1:
+   tag2:
+ - name: fire
+   tag1:
+   tag2:
+ - name: flag-checkered
+   tag1:
+   tag2:
+ - name: flag-o
+   tag1:
+   tag2:
+ - name: flag
+   tag1:
+   tag2:
+ - name: flash
+   tag1:
+   tag2:
+ - name: flask
+   tag1:
+   tag2:
+ - name: folder-o
+   tag1:
+   tag2:
+ - name: folder-open-o
+   tag1:
+   tag2:
+ - name: folder-open
+   tag1:
+   tag2:
+ - name: folder
+   tag1:
+   tag2:
+ - name: frown-o
+   tag1:
+   tag2:
+ - name: gamepad
+   tag1:
+   tag2:
+ - name: gavel
+   tag1:
+   tag2:
+ - name: gears
+   tag1:
+   tag2:
+ - name: gift
+   tag1:
+   tag2:
+ - name: glass
+   tag1:
+   tag2:
+ - name: globe
+   tag1:
+   tag2:
+ - name: graduation-cap
+   tag1:
+   tag2:
+ - name: group
+   tag1:
+   tag2:
+ - name: hashtag
+   tag1:
+   tag2:
+ - name: hdd-o
+   tag1:
+   tag2:
+ - name: headphones
+   tag1:
+   tag2:
+ - name: history
+   tag1:
+   tag2:
+ - name: home
+   tag1:
+   tag2:
+ - name: hourglass-end
+   tag1:
+   tag2:
+ - name: hourglass-half
+   tag1:
+   tag2:
+ - name: hourglass-o
+   tag1:
+   tag2:
+ - name: hourglass-start
+   tag1:
+   tag2:
+ - name: i-cursor
+   tag1:
+   tag2:
+ - name: image
+   tag1:
+   tag2:
+ - name: inbox
+   tag1:
+   tag2:
+ - name: industry
+   tag1:
+   tag2:
+ - name: info-circle
+   tag1:
+   tag2:
+ - name: info
+   tag1:
+   tag2:
+ - name: key
+   tag1:
+   tag2:
+ - name: keyboard-o
+   tag1:
+   tag2:
+ - name: language
+   tag1:
+   tag2:
+ - name: laptop
+   tag1:
+   tag2:
+ - name: leaf
+   tag1:
+   tag2:
+ - name: lemon-o
+   tag1:
+   tag2:
+ - name: level-down
+   tag1:
+   tag2:
+ - name: level-up
+   tag1:
+   tag2:
+ - name: life-ring
+   tag1:
+   tag2:
+ - name: lightbulb-o
+   tag1:
+   tag2:
+ - name: location-arrow
+   tag1:
+   tag2:
+ - name: lock
+   tag1:
+   tag2:
+ - name: magic
+   tag1:
+   tag2:
+ - name: magnet
+   tag1:
+   tag2:
+ - name: mail-forward
+   tag1:
+   tag2:
+ - name: mail-reply-all
+   tag1:
+   tag2:
+ - name: male
+   tag1:
+   tag2:
+ - name: map-marker
+   tag1:
+   tag2:
+ - name: map-o
+   tag1:
+   tag2:
+ - name: map-pin
+   tag1:
+   tag2:
+ - name: map-signs
+   tag1:
+   tag2:
+ - name: map
+   tag1:
+   tag2:
+ - name: meh-o
+   tag1:
+   tag2:
+ - name: microphone-slash
+   tag1:
+   tag2:
+ - name: microphone
+   tag1:
+   tag2:
+ - name: minus-circle
+   tag1:
+   tag2:
+ - name: minus
+   tag1:
+   tag2:
+ - name: mobile
+   tag1:
+   tag2:
+ - name: moon-o
+   tag1:
+   tag2:
+ - name: mouse-pointer
+   tag1:
+   tag2:
+ - name: music
+   tag1:
+   tag2:
+ - name: navicon
+   tag1:
+   tag2:
+ - name: newspaper-o
+   tag1:
+   tag2:
+ - name: object-group
+   tag1:
+   tag2:
+ - name: paint-brush
+   tag1:
+   tag2:
+ - name: paper-plane-o
+   tag1:
+   tag2:
+ - name: paw
+   tag1:
+   tag2:
+ - name: pencil-square
+   tag1:
+   tag2:
+ - name: pencil
+   tag1:
+   tag2:
+ - name: percent
+   tag1:
+   tag2:
+ - name: phone-square
+   tag1:
+   tag2:
+ - name: phone
+   tag1:
+   tag2:
+ - name: play
+   tag1:
+   tag2:
+ - name: plug
+   tag1:
+   tag2:
+ - name: plus-circle
+   tag1:
+   tag2:
+ - name: power-off
+   tag1:
+   tag2:
+ - name: print
+   tag1:
+   tag2:
+ - name: puzzle-piece
+   tag1:
+   tag2:
+ - name: qrcode
+   tag1:
+   tag2:
+ - name: question-circle
+   tag1:
+   tag2:
+ - name: question
+   tag1:
+   tag2:
+ - name: quote-left
+   tag1:
+   tag2:
+ - name: quote-right
+   tag1:
+   tag2:
+ - name: recycle
+   tag1:
+   tag2:
+ - name: registered
+   tag1:
+   tag2:
+ - name: reply
+   tag1:
+   tag2:
+ - name: retweet
+   tag1:
+   tag2:
+ - name: road
+   tag1:
+   tag2:
+ - name: rss-square
+   tag1:
+   tag2:
+ - name: rss
+   tag1:
+   tag2:
+ - name: search-minus
+   tag1:
+   tag2:
+ - name: search-plus
+   tag1:
+   tag2:
+ - name: search
+   tag1:
+   tag2:
+ - name: server
+   tag1:
+   tag2:
+ - name: share-alt-square
+   tag1:
+   tag2:
+ - name: share-alt
+   tag1:
+   tag2:
+ - name: share-square-o
+   tag1:
+   tag2:
+ - name: share-square
+   tag1:
+   tag2:
+ - name: shield
+   tag1:
+   tag2:
+ - name: shopping-bag
+   tag1:
+   tag2:
+ - name: shopping-basket
+   tag1:
+   tag2:
+ - name: shopping-cart
+   tag1:
+   tag2:
+ - name: sign-in
+   tag1:
+   tag2:
+ - name: signal
+   tag1:
+   tag2:
+ - name: sign-out
+   tag1:
+   tag2:
+ - name: sitemap
+   tag1:
+   tag2:
+ - name: sliders
+   tag1:
+   tag2:
+ - name: smile-o
+   tag1:
+   tag2:
+ - name: soccer-ball-o
+   tag1:
+   tag2:
+ - name: sort-alpha-asc
+   tag1:
+   tag2:
+ - name: sort-alpha-desc
+   tag1:
+   tag2:
+ - name: sort-amount-asc
+   tag1:
+   tag2:
+ - name: sort-amount-desc
+   tag1:
+   tag2:
+ - name: sort-numeric-asc
+   tag1:
+   tag2:
+ - name: sort-numeric-desc
+   tag1:
+   tag2:
+ - name: spoon
+   tag1:
+   tag2:
+ - name: star-half-o
+   tag1:
+   tag2:
+ - name: star-half
+   tag1:
+   tag2:
+ - name: star
+   tag1:
+   tag2:
+ - name: sticky-note-o
+   tag1:
+   tag2:
+ - name: sticky-note
+   tag1:
+   tag2:
+ - name: street-view
+   tag1:
+   tag2:
+ - name: suitcase
+   tag1:
+   tag2:
+ - name: sun-o
+   tag1:
+   tag2:
+ - name: tablet
+   tag1:
+   tag2:
+ - name: tag
+   tag1:
+   tag2:
+ - name: tags
+   tag1:
+   tag2:
+ - name: tasks
+   tag1:
+   tag2:
+ - name: terminal
+   tag1:
+   tag2:
+ - name: text-width
+   tag1:
+   tag2:
+ - name: th-large
+   tag1:
+   tag2:
+ - name: th
+   tag1:
+   tag2:
+ - name: thumb-tack
+   tag1:
+   tag2:
+ - name: ticket
+   tag1:
+   tag2:
+ - name: times-circle-o
+   tag1:
+   tag2:
+ - name: times-circle
+   tag1:
+   tag2:
+ - name: tint
+   tag1:
+   tag2:
+ - name: toggle-off
+   tag1:
+   tag2:
+ - name: toggle-on
+   tag1:
+   tag2:
+ - name: trademark
+   tag1:
+   tag2:
+ - name: trash-o
+   tag1:
+   tag2:
+ - name: trash
+   tag1:
+   tag2:
+ - name: tree
+   tag1:
+   tag2:
+ - name: trophy
+   tag1:
+   tag2:
+ - name: tty
+   tag1:
+   tag2:
+ - name: tv
+   tag1:
+   tag2:
+ - name: umbrella
+   tag1:
+   tag2:
+ - name: undo
+   tag1:
+   tag2:
+ - name: university
+   tag1:
+   tag2:
+ - name: unlock-alt
+   tag1:
+   tag2:
+ - name: unlock
+   tag1:
+   tag2:
+ - name: unsorted
+   tag1:
+   tag2:
+ - name: upload
+   tag1:
+   tag2:
+ - name: usb
+   tag1:
+   tag2:
+ - name: user-plus
+   tag1:
+   tag2:
+ - name: user-secret
+   tag1:
+   tag2:
+ - name: user-times
+   tag1:
+   tag2:
+ - name: user
+   tag1:
+   tag2:
+ - name: video-camera
+   tag1:
+   tag2:
+ - name: volume-down
+   tag1:
+   tag2:
+ - name: volume-off
+   tag1:
+   tag2:
+ - name: volume-up
+   tag1:
+   tag2:
+ - name: wifi
+   tag1:
+   tag2:
+ - name: wrench
+   tag1:
+   tag2:
+
+
+
+brand:
+ - name: android
+   tag1:
+   tag2: '#social'
+ - name: apple
+   tag1:
+   tag2: '#social'
+ - name: chrome
+   tag1:
+   tag2: '#social'
+ - name: css3
+   tag1:
+   tag2: '#social'
+ - name: dropbox
+   tag1:
+   tag2: '#social'
+ - name: edge
+   tag1:
+   tag2: '#social'
+ - name: facebook-official
+   tag1:
+   tag2: '#social'
+ - name: facebook-square
+   tag1:
+   tag2: '#social'
+ - name: facebook
+   tag1:
+   tag2: '#social'
+ - name: firefox
+   tag1:
+   tag2: '#social'
+ - name: flickr
+   tag1:
+   tag2: '#social'
+ - name: foursquare
+   tag1:
+   tag2: '#social'
+ - name: google-plus-square
+   tag1:
+   tag2: '#social'
+ - name: google-plus
+   tag1:
+   tag2: '#social'
+ - name: google
+   tag1:
+   tag2: '#social'
+ - name: html5
+   tag1:
+   tag2: '#social'
+ - name: instagram
+   tag1:
+   tag2: '#social'
+ - name: internet-explorer
+   tag1:
+   tag2: '#social'
+ - name: linkedin-square
+   tag1:
+   tag2: '#social'
+ - name: linkedin
+   tag1:
+   tag2: '#social'
+ - name: linux
+   tag1:
+   tag2: '#social'
+ - name: opera
+   tag1:
+   tag2: '#social'
+ - name: pinterest-p
+   tag1:
+   tag2: '#social'
+ - name: pinterest-square
+   tag1:
+   tag2: '#social'
+ - name: pinterest
+   tag1:
+   tag2: '#social'
+ - name: safari
+   tag1:
+   tag2: '#social'
+ - name: skype
+   tag1:
+   tag2: '#social'
+ - name: slack
+   tag1:
+   tag2: '#social'
+ - name: tripadvisor
+   tag1:
+   tag2: '#social'
+ - name: twitter-square
+   tag1:
+   tag2: '#social'
+ - name: twitter
+   tag1:
+   tag2: '#social'
+ - name: vimeo-square
+   tag1:
+   tag2: '#social'
+ - name: vimeo
+   tag1:
+   tag2: '#social'
+ - name: whatsapp
+   tag1:
+   tag2: '#social'
+ - name: wikipedia-w
+   tag1:
+   tag2: '#social'
+ - name: windows
+   tag1:
+   tag2: '#social'
+ - name: wordpress
+   tag1:
+   tag2: '#social'
+ - name: youtube
+   tag1:
+   tag2: '#social'
+
+hand:
+ - name: hand-grab-o
+   tag1:
+   tag2:
+ - name: hand-o-down
+   tag1:
+   tag2:
+ - name: hand-o-left
+   tag1:
+   tag2:
+ - name: hand-o-right
+   tag1:
+   tag2:
+ - name: hand-o-up
+   tag1:
+   tag2:
+ - name: hand-paper-o
+   tag1:
+   tag2:
+ - name: hand-peace-o
+   tag1:
+   tag2:
+ - name: hand-pointer-o
+   tag1:
+   tag2:
+ - name: thumbs-down
+   tag1:
+   tag2:
+ - name: thumbs-up
+   tag1:
+   tag2:
+ - name: thumbs-o-down
+   tag1:
+   tag2:
+ - name: thumbs-o-up
+   tag1:
+   tag2:
+
+
+
+transportation:
+ - name: ambulance
+   tag1:
+   tag2:
+ - name: bicycle
+   tag1:
+   tag2:
+ - name: bus
+   tag1:
+   tag2:
+ - name: car
+   tag1:
+   tag2:
+ - name: fighter-jet
+   tag1:
+   tag2:
+ - name: motorcycle
+   tag1:
+   tag2:
+ - name: plane
+   tag1:
+   tag2:
+ - name: rocket
+   tag1:
+   tag2:
+ - name: ship
+   tag1:
+   tag2:
+ - name: space-shuttle
+   tag1:
+   tag2:
+ - name: subway
+   tag1:
+   tag2:
+ - name: taxi
+   tag1:
+   tag2:
+ - name: train
+   tag1:
+   tag2:
+ - name: truck
+   tag1:
+   tag2:
+ - name: wheelchair
+   tag1:
+   tag2:
+
+gender:
+ - name: genderless
+   tag1:
+   tag2:
+ - name: mars
+   tag1:
+   tag2:
+ - name: venus
+   tag1:
+   tag2:
+ - name: transgender
+   tag1:
+   tag2:
+
+file:
+ - name: file
+   tag1:
+   tag2:
+ - name: file-archive-o
+   tag1:
+   tag2:
+ - name: file-audio-o
+   tag1:
+   tag2:
+ - name: file-code-o
+   tag1:
+   tag2:
+ - name: file-excel-o
+   tag1:
+   tag2:
+ - name: file-image-o
+   tag1:
+   tag2:
+ - name: file-o
+   tag1:
+   tag2:
+ - name: file-pdf-o
+   tag1:
+   tag2:
+ - name: file-powerpoint-o
+   tag1:
+   tag2:
+ - name: file-text
+   tag1:
+   tag2:
+ - name: file-text-o
+   tag1:
+   tag2:
+ - name: file-video-o
+   tag1:
+   tag2:
+ - name: file-word-o
+   tag1:
+   tag2:
+
+spinner:
+ - name: circle-o-notch
+   tag1:
+   tag2:
+ - name: gear
+   tag1:
+   tag2:
+ - name: refresh
+   tag1:
+   tag2:
+ - name: spinner
+   tag1:
+   tag2:
+
+formcontrol:
+ - name: check-square
+   tag1:
+   tag2:
+ - name: check-square-o
+   tag1:
+   tag2:
+ - name: circle
+   tag1:
+   tag2:
+ - name: circle-o
+   tag1:
+   tag2:
+ - name: circle-o-notch
+   tag1:
+   tag2:
+ - name: dot-circle-o
+   tag1:
+   tag2:
+ - name: minus-square
+   tag1:
+   tag2:
+ - name: minus-square-o
+   tag1:
+   tag2:
+ - name: plus-square
+   tag1:
+   tag2:
+ - name: plus-square-o
+   tag1:
+   tag2:
+ - name: square
+   tag1:
+   tag2:
+ - name: square-o
+   tag1:
+   tag2:
+
+
+payment:
+ - name: cc-amex
+   tag1:
+   tag2:
+ - name: cc-diners-club
+   tag1:
+   tag2:
+ - name: cc-discover
+   tag1:
+   tag2:
+ - name: cc-jcb
+   tag1:
+   tag2:
+ - name: cc-mastercard
+   tag1:
+   tag2:
+ - name: cc-paypal
+   tag1:
+   tag2:
+   name: cc-stripe
+   tag1:
+   tag2:
+ - name: cc-visa
+   tag1:
+   tag2:
+ - name: credit-card
+   tag1:
+   tag2:
+ - name: credit-card-alt
+   tag1:
+   tag2:
+ - name: google-wallet
+   tag1:
+   tag2:
+ - name: paypal
+   tag1:
+   tag2:
+
+chart:
+ - name: area-chart
+   tag1:
+   tag2:
+ - name: bar-chart
+   tag1:
+   tag2:
+ - name: line-chart
+   tag1:
+   tag2:
+ - name: pie-chart
+   tag1:
+   tag2:
+
+currency:
+ - name: btc
+   tag1:
+   tag2:
+ - name: euro
+   tag1:
+   tag2:
+ - name: gbp
+   tag1:
+   tag2:
+ - name: gg
+   tag1:
+   tag2:
+ - name: gg-circle
+   tag1:
+   tag2:
+ - name: ils
+   tag1:
+   tag2:
+ - name: inr
+   tag1:
+   tag2:
+ - name: yen
+   tag1:
+   tag2:
+ - name: krw
+   tag1:
+   tag2:
+ - name: money
+   tag1:
+   tag2:
+ - name: rub
+   tag1:
+   tag2:
+ - name: try
+   tag1:
+   tag2:
+ - name: usd
+   tag1:
+   tag2:
+
+texteditor:
+ - name: align-center
+   tag1:
+   tag2:
+ - name: align-justify
+   tag1:
+   tag2:
+ - name: align-left
+   tag1:
+   tag2:
+ - name: align-right
+   tag1:
+   tag2:
+ - name: bold
+   tag1:
+   tag2:
+ - name: clipboard
+   tag1:
+   tag2:
+ - name: columns
+   tag1:
+   tag2:
+ - name: copy
+   tag1:
+   tag2:
+ - name: eraser
+   tag1:
+   tag2:
+ - name: files-o
+   tag1:
+   tag2:
+ - name: font
+   tag1:
+   tag2:
+ - name: header
+   tag1:
+   tag2:
+ - name: indent
+   tag1:
+   tag2:
+ - name: italic
+   tag1:
+   tag2:
+ - name: link
+   tag1:
+   tag2:
+ - name: list
+   tag1:
+   tag2:
+ - name: list-alt
+   tag1:
+   tag2:
+ - name: list-ol
+   tag1:
+   tag2:
+ - name: list-ul
+   tag1:
+   tag2:
+ - name: outdent
+   tag1:
+   tag2:
+ - name: paperclip
+   tag1:
+   tag2:
+ - name: paragraph
+   tag1:
+   tag2:
+ - name: repeat
+   tag1:
+   tag2:
+ - name: save
+   tag1:
+   tag2:
+ - name: scissors
+   tag1:
+   tag2:
+ - name: strikethrough
+   tag1:
+   tag2:
+ - name: subscript
+   tag1:
+   tag2:
+ - name: superscript
+   tag1:
+   tag2:
+ - name: table
+   tag1:
+   tag2:
+ - name: text-height
+   tag1:
+   tag2:
+ - name: text-width
+   tag1:
+   tag2:
+ - name: th
+   tag1:
+   tag2:
+ - name: th-large
+   tag1:
+   tag2:
+ - name: underline
+   tag1:
+   tag2:
+ - name: undo
+   tag1:
+   tag2:
+ - name: unlink
+   tag1:
+   tag2:
+
+directional:
+ - name: angle-double-down
+   tag1:
+   tag2:
+ - name: angle-double-left
+   tag1:
+   tag2:
+ - name: angle-double-right
+   tag1:
+   tag2:
+ - name: angle-double-up
+   tag1:
+   tag2:
+ - name: angle-down
+   tag1:
+   tag2:
+ - name: angle-left
+   tag1:
+   tag2:
+ - name: angle-right
+   tag1:
+   tag2:
+ - name: angle-up
+   tag1:
+   tag2:
+ - name: arrow-circle-down
+   tag1:
+   tag2:
+ - name: arrow-circle-left
+   tag1:
+   tag2:
+ - name: arrow-circle-o-down
+   tag1:
+   tag2:
+ - name: arrow-circle-o-left
+   tag1:
+   tag2:
+ - name: arrow-circle-o-right
+   tag1:
+   tag2:
+ - name: arrow-circle-o-up
+   tag1:
+   tag2:
+ - name: arrow-circle-right
+   tag1:
+   tag2:
+ - name: arrow-circle-up
+   tag1:
+   tag2:
+ - name: arrow-down
+   tag1:
+   tag2:
+ - name: arrow-left
+   tag1:
+   tag2:
+ - name: arrow-right
+   tag1:
+   tag2:
+ - name: arrow-up
+   tag1:
+   tag2:
+ - name: arrows
+   tag1:
+   tag2:
+ - name: arrows-alt
+   tag1:
+   tag2:
+ - name: arrows-h
+   tag1:
+   tag2:
+ - name: arrows-v
+   tag1:
+   tag2:
+ - name: caret-down
+   tag1:
+   tag2:
+ - name: caret-left
+   tag1:
+   tag2:
+ - name: caret-right
+   tag1:
+   tag2:
+ - name: caret-up
+   tag1:
+   tag2:
+ - name: chevron-circle-down
+   tag1:
+   tag2:
+ - name: chevron-circle-left
+   tag1:
+   tag2:
+ - name: chevron-circle-right
+   tag1:
+   tag2:
+ - name: chevron-circle-up
+   tag1:
+   tag2:
+ - name: chevron-down
+   tag1:
+   tag2:
+ - name: chevron-left
+   tag1:
+   tag2:
+ - name: chevron-right
+   tag1:
+   tag2:
+ - name: chevron-up
+   tag1:
+   tag2:
+ - name: exchange
+   tag1:
+   tag2:
+ - name: long-arrow-down
+   tag1:
+   tag2:
+ - name: long-arrow-left
+   tag1:
+   tag2:
+ - name: long-arrow-right
+   tag1:
+   tag2:
+ - name: long-arrow-up
+   tag1:
+   tag2:
+ - name: toggle-down
+   tag1:
+   tag2:
+ - name: toggle-left
+   tag1:
+   tag2:
+ - name: toggle-right
+   tag1:
+   tag2:
+ - name: toggle-up
+   tag1:
+   tag2:
+
+video:
+ - name: backward
+   tag1:
+   tag2:
+ - name: compress
+   tag1:
+   tag2:
+ - name: eject
+   tag1:
+   tag2:
+ - name: expand
+   tag1:
+   tag2:
+ - name: fast-backward
+   tag1:
+   tag2:
+ - name: fast-forward
+   tag1:
+   tag2:
+ - name: forward
+   tag1:
+   tag2:
+ - name: pause
+   tag1:
+   tag2:
+ - name: pause-circle
+   tag1:
+   tag2:
+ - name: pause-circle-o
+   tag1:
+   tag2:
+ - name: play
+   tag1:
+   tag2:
+ - name: play-circle
+   tag1:
+   tag2:
+ - name: play-circle-o
+   tag1:
+   tag2:
+ - name: random
+   tag1:
+   tag2:
+ - name: step-backward
+   tag1:
+   tag2:
+ - name: step-forward
+   tag1:
+   tag2:
+ - name: stop
+   tag1:
+   tag2:
+ - name: stop-circle
+   tag1:
+   tag2:
+ - name: stop-circle-o
+   tag1:
+   tag2:
+ - name: youtube-play
+   tag1:
+   tag2: '#social'
+
+medical:
+ - name: ambulance
+   tag1:
+   tag2:
+ - name: h-square
+   tag1:
+   tag2:
+ - name: heart
+   tag1:
+   tag2:
+ - name: heart-o
+   tag1:
+   tag2:
+ - name: heartbeat
+   tag1:
+   tag2:
+ - name: hospital-o
+   tag1:
+   tag2:
+ - name: medkit
+   tag1:
+   tag2:
+ - name: plus-square
+   tag1:
+   tag2:
+ - name: stethoscope
+   tag1:
+   tag2:
+ - name: user-md
+   tag1:
+   tag2:
+ - name: wheelchair
+   tag1:
+   tag2:

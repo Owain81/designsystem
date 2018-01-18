@@ -1,0 +1,36 @@
+.alert {
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: $alert-icon-top;
+    right: $alert-icon-right;
+    width: $alert-icon-size;
+    height: $alert-icon-size;
+    border-radius: 50%;
+    background-color: $color-white;
+    font-family: 'FontAwesome';
+    font-size: $alert-icon-font-size;
+    line-height: 1;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      right: calc(50% - #{$alert-icon-size}/2); 
+    }
+  }
+
+  &.alert-info::after {
+    color: $alert-info-icon-color;
+    content: $alert-info-icon-content;
+  }
+
+  &.alert-warning::after {
+    color: $alert-warning-icon-color;
+    content: $alert-warning-icon-content;
+  }
+}
+
+ul.alert {
+  padding-left: 2rem;
+}

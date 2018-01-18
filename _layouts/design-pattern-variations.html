@@ -1,0 +1,296 @@
+{% capture design-pattern-variation-main-image %}
+<div><img class="img-fluid" src="{{ site.baseurl }}/images/design-patterns/{{ page.main-image-variation }}"></div>{% endcapture %} {% capture design-pattern-variation-1-image %}
+<div><img class="img-fluid" src="{{ site.baseurl }}/images/design-patterns/design-pattern-{{ page.title-variation-1 | slugify }}.png"></div>{% endcapture %} {% capture design-pattern-variation-2-image %}
+<div><img class="img-fluid" src="{{ site.baseurl }}/images/design-patterns/design-pattern-{{ page.title-variation-2 | slugify }}.png"></div>{% endcapture %} {% capture design-pattern-variation-1-extra-image %}
+<div><img class="img-fluid" src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-image-variation-1 }}"></div>{% endcapture %} {% capture design-pattern-variation-1-extra-image %}
+<div><img class="img-fluid" src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-image-variation-1 }}"></div>{% endcapture %} {% capture design-pattern-video %}
+<div class="embed-responsive embed-responsive--design-pattern">
+  <video class="embed-responsive-item">
+		<source src="{{ site.baseurl }}/images/design-patterns/design-pattern-video-{{ page.title | slugify }}.mp4" type="video/mp4">
+		<source src="{{ site.baseurl }}/images/design-patterns/design-pattern-video-{{ page.title | slugify }}.mov" type="video/mov">
+		Your browser does not support the video tag.
+	</video>
+	<div class="video-play"></div>
+	<div class="video-pause"></div>
+</div>
+{% endcapture %} {% capture design-pattern-video-1 %}
+<div class="embed-responsive embed-responsive--design-pattern">
+  <video class="embed-responsive-item">
+		<source src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-video-variation-1 }}.mp4" type="video/mp4">
+		<source src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-video-variation-1 }}.mov" type="video/mov">
+		Your browser does not support the video tag.
+	</video>
+	<div class="video-play"></div>
+	<div class="video-pause"></div>
+</div>
+{% endcapture %} {% capture design-pattern-video-2 %}
+<div class="embed-responsive embed-responsive--design-pattern">
+  <video class="embed-responsive-item">
+		<source src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-video-variation-2 }}.mp4" type="video/mp4">
+		<source src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-video-variation-2 }}.mov" type="video/mov">
+		Your browser does not support the video tag.
+	</video>
+	<div class="video-play"></div>
+	<div class="video-pause"></div>
+</div>
+{% endcapture %} {% capture design-pattern-video-3 %}
+<div class="embed-responsive embed-responsive--design-pattern">
+  <video class="embed-responsive-item">
+		<source src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-video-variation-3 }}.mp4" type="video/mp4">
+		<source src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-video-variation-3 }}.mov" type="video/mov">
+		Your browser does not support the video tag.
+	</video>
+	<div class="video-play"></div>
+	<div class="video-pause"></div>
+</div>
+{% endcapture %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--default">
+  {% include website/navigation.html %}
+  <main class="main" aria-label="Content">
+    {% include website/header.html breadcrumbs="true" %}
+    <div class="container-fluid main-content">
+
+      <!-- MAIN -->
+      {%- include website/ui-patterns/back-button.html -%}
+      <!-- if -->
+      {%if page.what %}
+      <div class="row">
+        <div class="col{% if page.design-pattern-type == 'mobile' and page.main-image-variation %}-12 col-lg-7 col-xl-8{% endif %}">
+          <h3>What</h3>
+          {{ page.what | markdownify }}
+
+          <!-- if -->
+          {% if page.why %}
+          <h3>Why</h3>
+          {{ page.why | markdownify }} {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {% if page.do %}
+          <h3>Do</h3>
+          <div class="design-pattern__list design-pattern__list--do">
+            {{ page.do | markdownify }}
+          </div>
+          {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {% if page.dont %}
+          <h3>Don't</h3>
+          <div class="design-pattern__list  design-pattern__list--dont">
+            {{ page.dont | markdownify }}
+          </div>
+          {% endif %}
+          <!-- endif -->
+        </div>
+
+        <!-- if -->
+        {% if page.main-image-variation %}
+        <div class="col-12 col-lg-5 col-xl-4 mt-28">
+          {{ design-pattern-variation-main-image }}
+        </div>
+        {% endif %}
+        <!-- endif -->
+      </div>
+      {% endif %}
+      <!-- endif -->
+
+      <!-- VARIATION 1 -->
+
+      <!-- if -->
+      {%if page.title-variation-1 %}
+      <div class="row">
+        <div class="col{% if page.design-pattern-type == 'mobile' %}-12 col-lg-7 col-xl-8{% endif %}">
+          <!-- if -->
+          {% if page.design-pattern-type == 'desktop' %} {{ design-pattern-variation-1-image }}
+          <!-- if -->
+          {% if page.extra-image-variation-1 %} {{ design-pattern-variation-1-extra-image }} {% endif %}
+          <!-- endif -->
+          {% endif %}
+          <!-- endif -->
+
+          <h2>{{ page.title-variation-1 }}</h2>
+
+          <h3>What</h3>
+          {{ page.what-variation-1 | markdownify }}
+
+          <!-- if -->
+          {% if page.why-variation-1 %}
+          <h3>Why</h3>
+          {{ page.why-variation-1 | markdownify }} {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {% if page.do-variation-1 %}
+          <h3>Do</h3>
+          <div class="design-pattern__list design-pattern__list--do">
+            {{ page.do-variation-1 | markdownify }}
+          </div>
+          {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {% if page.dont-variation-1 %}
+          <h3>Don't</h3>
+          <div class="design-pattern__list design-pattern__list--dont">
+            {{ page.dont-variation-1 | markdownify }}
+          </div>
+          {% endif %}
+          <!-- endif -->
+        </div>
+
+        <!-- if -->
+        {% if page.design-pattern-type == 'mobile' %}
+        <div class="col-12 col-lg-5 col-xl-4">
+          {{ design-pattern-variation-1-image }}
+          <!-- if -->
+          {% if page.extra-image-variation-1 %} {{ design-pattern-variation-1-extra-image }} {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {% if page.extra-video-variation-1 %} {{ design-pattern-video-1 }} {% endif %}
+          <!-- endif -->
+        </div>
+        {% endif %}
+        <!-- endif -->
+      </div>
+      {% endif %}
+      <!-- endif -->
+
+      <!-- VARIATION 2 -->
+
+      <!-- if -->
+      {%if page.title-variation-2 %}
+      <div class="row mt-28">
+        <div class="col{% if page.design-pattern-type == 'mobile' %}-12 col-lg-7 col-xl-8{% endif %}">
+          <!-- if -->
+          {% if page.design-pattern-type == 'desktop' %} {{ design-pattern-variation-2-image }}
+          <!-- if -->
+          {% if page.extra-image-variation-2 %} {{ design-pattern-variation-2-extra-image }} {% endif %}
+          <!-- endif -->
+          {% endif %}
+          <!-- endif -->
+
+          <h2>{{ page.title-variation-2 }}</h2>
+
+          <h3>What</h3>
+          {{ page.what-variation-2 | markdownify }}
+
+          <!-- if -->
+          {% if page.why-variation-2 %}
+          <h3>Why</h3>
+          {{ page.why-variation-2 | markdownify }} {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {% if page.do-variation-2 %}
+          <h3>Do</h3>
+          <div class="design-pattern__list design-pattern__list--do">
+            {{ page.do-variation-2 | markdownify }}
+          </div>
+          {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {% if page.dont-variation-2 %}
+          <h3>Don't</h3>
+          <div class="design-pattern__list design-pattern__list--dont">
+            {{ page.dont-variation-2 | markdownify }}
+          </div>
+          {% endif %}
+          <!-- endif -->
+        </div>
+
+        <!-- if -->
+        {% if page.design-pattern-type == 'mobile' %}
+        <div class="col-12 col-lg-5 col-xl-4">
+          {{ design-pattern-variation-2-image }}
+          <!-- if -->
+          {% if page.extra-image-variation-2 %} {{ design-pattern-variation-2-extra-image }} {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {% if page.extra-video-variation-2 %} {{ design-pattern-video-2 }} {% endif %}
+          <!-- endif -->
+        </div>
+        {% endif %}
+        <!-- endif -->
+      </div>
+      {% endif %}
+      <!-- endif -->
+
+      <!-- VARIATION 3 -->
+
+      <!-- if -->
+      {%if page.title-variation-3 %}
+      <div class="row mt-28">
+        <div class="col{% if page.design-pattern-type == 'mobile' %}-12 col-lg-7 col-xl-8{% endif %}">
+          <!-- if -->
+          {% if page.design-pattern-type == 'desktop' %} {{ design-pattern-variation-3-image }}
+          <!-- if -->
+          {% if page.extra-image-variation-3 %} {{ design-pattern-variation-3-extra-image }} {% endif %}
+          <!-- endif -->
+          {% endif %}
+          <!-- endif -->
+
+          <h2>{{ page.title-variation-3 }}</h2>
+
+          <h3>What</h3>
+          {{ page.what-variation-3 | markdownify }}
+
+          <!-- if -->
+          {%if page.why-variation-3 %}
+          <h3>Why</h3>
+          {{ page.why-variation-3 | markdownify }} {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {%if page.do-variation-3 %}
+          <h3>Do</h3>
+          <div class="design-pattern__list design-pattern__list--do">
+            {{ page.do-variation-3 | markdownify }}
+          </div>
+          {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {%if page.dont-variation-3 %}
+          <h3>Don't</h3>
+          <div class="design-pattern__list design-pattern__list--dont">
+            {{ page.dont-variation-3 | markdownify }}
+          </div>
+          {% endif %}
+          <!-- endif -->
+        </div>
+
+        <!-- if -->
+        {% if page.design-pattern-type == 'mobile' %}
+        <div class="col-12 col-lg-5 col-xl-4">
+          {{ design-pattern-variation-3-image }}
+          <!-- if -->
+          {% if page.extra-image-variation-3 %} {{ design-pattern-variation-3-extra-image }} {% endif %}
+          <!-- endif -->
+
+          <!-- if -->
+          {% if page.extra-video-variation-3 %} {{ design-pattern-video-3 }} {% endif %}
+          <!-- endif -->
+        </div>
+        {% endif %}
+        <!-- endif -->
+      </div>
+      {% endif %}
+      <!-- endif -->
+    </div>
+  </main>
+
+  {% include website/scripts.html %}
+
+</body>
+
+</html>

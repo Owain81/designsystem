@@ -1,0 +1,29 @@
+// Header
+
+$header-background-color: $color-grey-unit4;
+$header-padding-top: px-to-rem(28px);
+$header-mobile-padding-top: px-to-rem(16px);
+$header-mobile-height: 52px;
+$header-mobile-withtabs-height: $header-mobile-height * 2;
+
+// Breadcrumbs
+
+$header-breadcrumbs-color: $color-white;
+$header-breadcrumbs-margin-bottom: 12px;
+$header-breadcrumbs-line-height: 1.25;
+
+// Title
+
+$header-h1-margin-bottom: 31px;
+$header-h1-with-tabs-margin-bottom: 24px;
+$header-h1-color: $color-white;
+$header-mobile-h1-font-size: 1rem;
+$header-mobile-h1-padding-left: px-to-rem(40px);
+$header-mobile-h1-margin-bottom: 16px;
+
+// Tabs
+
+$header-nav-link-color: $color-grey-34;
+$header-nav-link-hover-color: $color-white;
+$header-nav-link-active-color: $header-nav-link-hover-color;
+$header-nav-link-border-bottom-color: $color-scheme-u4green;

@@ -1,0 +1,94 @@
+pre {
+  border: 0;
+
+  &[class*='language-'] {
+    overflow-y: hidden;
+    backface-visibility: hidden;
+  }
+
+  &.line-numbers {
+    padding: $code-block-line-numbers-padding;
+
+    .line-numbers-rows {
+      top: $code-block-line-numbers-rows-top;
+      left: $code-block-line-numbers-rows-left;
+      padding: $code-block-line-numbers-rows-padding;
+      background-color: $code-block-line-numbers-rows-background;
+
+      >span:before {
+        color: $code-block-line-numbers-rows-color;
+      }
+    }
+  }
+}
+
+.code-block {
+  position: relative;
+  border: $code-block-border;
+  overflow: hidden;
+
+  button {
+    right: $code-block-button-right;
+    padding: $code-block-button-padding;
+    border: 0;
+    outline: none;
+    background-color: $code-block-button-background;
+
+    .fa {
+      color: $code-block-button-icon-color;
+    }
+  }
+
+  .copy-clipboard {
+    position: absolute;
+    z-index: 1;
+
+    .copy-message {
+      left: $code-block-copy-message-left;
+      color: $color-darkgrey-unit4;
+
+      &.show {
+        left: $code-block-copy-message-show-left;
+      }
+    }
+  }
+
+  .show-more {
+    display: none;
+    position: absolute;
+    bottom: $code-block-button-show-more-bottom;
+    z-index: 1;
+
+    .fa {
+      transition: $code-block-button-show-more-transition;
+    }
+  }
+
+  &.resizable {
+
+    .show-more {
+      display: block;
+    }
+
+  }
+
+  &.open.resizable {
+    &::after {
+      height: 0;
+    }
+
+    .show-more .fa {
+      transform: rotate(180deg);
+    }
+  }
+
+  figure {
+    margin: 0;
+  }
+}
+
+// Hidden code text area for copy functionality
+#code-clipboard {
+  position: fixed;
+  left: -99999px;
+}

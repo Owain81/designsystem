@@ -1,0 +1,424 @@
+# Design patterns menu
+design-patterns-menu:
+- title: UI patterns
+  subfolderitems:
+    #Navigation
+    - page: Navigation
+      subsubfolderitems:
+       - page: Navigation bar
+         url: /ui-patterns/navigation/navigation-bar/
+         thumb-position: top
+         tags:
+          - Navigation
+          - Search, sort and filter
+       - page: Navigation side drawer
+         url: /ui-patterns/navigation/navigation-side-drawer/
+         thumb-position: top
+         tags: [Navigation]
+       - page: List menu
+         url: /ui-patterns/navigation/list-menu/
+         thumb-position: top
+         tags: [Navigation]
+       - page: Tabs
+         url: /ui-patterns/navigation/tabs/
+         thumb-position: top
+         tags:
+          - Navigation
+          - Search, sort and filter
+       - page: Dashboards
+         url: /ui-patterns/navigation/dashboard/
+         thumb-position: center
+         tags: [Navigation, Charts, Tools]
+       - page: Page swiping
+         url: /ui-patterns/navigation/page-swiping/
+         thumb-position: bottom
+         tags: [Navigation]
+       - page: Accordion
+         url: /ui-patterns/navigation/accordion/
+         thumb-position: center
+         tags: [Navigation]
+       - page: Springboard
+         url: /ui-patterns/navigation/springboard/
+         thumb-position: top
+         tags: [Navigation]
+       - page: Multi-step / Wizard
+         url: /ui-patterns/navigation/multistep-wizard/
+         thumb-position: bottom
+         tags: [Navigation]
+       - page: Cards
+         url: /ui-patterns/navigation/cards/
+         thumb-position: top
+         tags: [Navigation]
+       - page: Gallery
+         url: /ui-patterns/navigation/gallery/
+         thumb-position: top
+         tags: [Navigation]
+       - page: Modals
+         url: /ui-patterns/navigation/modals/
+         thumb-position: center
+         tags: [Navigation]
+       - page: Toggle menu
+         url: /ui-patterns/navigation/toggle-menu/
+         thumb-position: top
+         tags: [Navigation]
+       - page: Pie menu
+         url: /ui-patterns/navigation/pie-menu/
+         thumb-position: bottom
+         tags: [Navigation]
+    #Charts
+    - page: Charts
+      #url: /ui-patterns/charts/
+      description: Way-finding to use the app
+      icon: fa-area-chart #Fontawesome
+      subsubfolderitems:
+       - page: Dashboards
+         url: /ui-patterns/charts/dashboard/
+         thumb-position: center
+         tags: [Charts]
+       - page: Chart with filters
+         url: /ui-patterns/charts/chart-with-filters/
+         thumb-position: bottom
+         tags: [Charts]
+       - page: Data point details
+         url: /ui-patterns/charts/data-point-details/
+         thumb-position: center
+         tags: [Charts]
+       - page: Drill down
+         url: /ui-patterns/charts/drill-down/
+         thumb-position: top
+         tags: [Charts]
+       - page: Spark lines
+         url: /ui-patterns/charts/spark-lines/
+         thumb-position: center
+         tags: [Charts]
+       - page: Thresholds
+         url: /ui-patterns/charts/thresholds/
+         thumb-position: center
+         tags: [Charts]
+       - page: Integrated legend
+         url: /ui-patterns/charts/integrated-legend/
+         thumb-position: top
+         tags: [Charts]
+       - page: Interactive timeline
+         url: /ui-patterns/charts/interactive-timeline/
+         thumb-position: bottom
+         tags: [Charts]
+       - page: Interactive preview
+         url: /ui-patterns/charts/interactive-preview/
+         thumb-position: center
+         tags: [Charts]
+      #Feedback/notifications
+    - page: Feedback / notifications
+      #url: /ui-patterns/feedback-notifications/
+      description: Check process results
+      icon: fa-check-circle #Fontawesome
+      subsubfolderitems:
+       - page: Confirmation
+         url: /ui-patterns/feedback-notifications/confirmation/
+         thumb-position: bottom
+         tags: [Feedback / notifications]
+       - page: Error notification
+         url: /ui-patterns/feedback-notifications/error-notification/
+         thumb-position: top
+       - page: System status
+         url: /ui-patterns/feedback-notifications/system-status/
+         thumb-position: center
+         tags: [Feedback / notifications]
+       - page: Drag
+         url: /ui-patterns/feedback-notifications/drag/
+         thumb-position: top
+         tags: [Feedback / notifications]
+       - page: Empty state
+         url: /ui-patterns/feedback-notifications/empty-state/
+         thumb-position: center
+         tags: [Feedback / notifications]
+       - page: Swipe / flick
+         url: /ui-patterns/feedback-notifications/swipe-flick/
+         thumb-position: bottom
+         tags: [Feedback / notifications]
+       - page: Tap
+         url: /ui-patterns/feedback-notifications/tap/
+         thumb-position: top
+         tags: [Feedback / notifications]
+    #Forms
+    - page: Forms
+      #url: /ui-patterns/forms/
+      description: Fill and submit information
+      icon: fa-file-text #Fontawesome
+      subsubfolderitems:
+       - page: Sign in
+         url: /ui-patterns/forms/sign-in/
+         thumb-position: center
+         tags: [Forms]
+       - page: Long forms
+         url: /ui-patterns/forms/long-forms/
+         thumb-position: top
+         tags: [Forms]
+       - page: Search form
+         url: /ui-patterns/forms/search-form/
+         thumb-position: top
+         tags: [Forms]
+       - page: Calculator form
+         url: /ui-patterns/forms/calculator-form/
+         thumb-position: center
+         tags: [Forms]
+       - page: Checkout
+         url: /ui-patterns/forms/checkout/
+         thumb-position: bottom
+         tags: [Forms]
+       - page: Registration
+         url: /ui-patterns/forms/registration/
+         thumb-position: bottom
+         tags: [Forms]
+    #Search, sort and filter
+    - page: Search, sort and filter
+      #url: /ui-patterns/search-sort-and-filter/
+      description: Find a specific element
+      icon: fa-search #Fontawesome
+      subsubfolderitems:
+       - page: Autocomplete
+         url: /ui-patterns/search-sort-and-filter/autocomplete/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Filter drawer
+         url: /ui-patterns/search-sort-and-filter/filter-drawer/
+         thumb-position: bottom
+         tags:
+          - Search, sort and filter
+       - page: Search result
+         url: /ui-patterns/search-sort-and-filter/search-result/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Sort overlay
+         url: /ui-patterns/search-sort-and-filter/sort-overlay/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Sort form
+         url: /ui-patterns/search-sort-and-filter/sort-form/
+         thumb-position: bottom
+         tags:
+          - Search, sort and filter
+       - page: On screen sort
+         url: /ui-patterns/search-sort-and-filter/on-screen-sort/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Implicit search
+         url: /ui-patterns/search-sort-and-filter/implicit-search/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Dynamic search
+         url: /ui-patterns/search-sort-and-filter/dynamic-search/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Saved, recent and popular search
+         url: /ui-patterns/search-sort-and-filter/saved-recent-popular-search/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Filter overlay
+         url: /ui-patterns/search-sort-and-filter/filter-overlay/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Explicit search
+         url: /ui-patterns/search-sort-and-filter/explicit-search/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: On screen filter
+         url: /ui-patterns/search-sort-and-filter/on-screen-filter/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Gesture based filter
+         url: /ui-patterns/search-sort-and-filter/gesture-based-filter/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+       - page: Scoped search
+         url: /ui-patterns/search-sort-and-filter/scoped-search/
+         thumb-position: top
+         tags:
+          - Search, sort and filter
+    #Tables
+    - page: Tables
+      #url: /ui-patterns/tables/
+      description: Compare and check data
+      icon: fa-table #Fontawesome
+      subsubfolderitems:
+       - page: Editable table
+         url: /ui-patterns/tables/editable-table/
+         thumb-position: center
+         tags: [Tables]
+       - page: Fixed column
+         url: /ui-patterns/tables/fixed-column/
+         thumb-position: top
+         tags: [Tables]
+       - page: Overview plus data
+         url: /ui-patterns/tables/overview-plus-data/
+         thumb-position: top
+         tags: [Tables]
+       - page: Basic table
+         url: /ui-patterns/tables/basic-table/
+         thumb-position: top
+         tags: [Tables]
+       - page: Table with visual indicators
+         url: /ui-patterns/tables/table-with-visual-indicators/
+         thumb-position: top
+         tags: [Tables]
+       - page: Grouped rows
+         url: /ui-patterns/tables/grouped-rows/
+         thumb-position: center
+         tags: [Tables]
+    #Tools
+    - page: Tools
+      #url: /ui-patterns/tools/
+      description: Carry out a specific action
+      icon: fa-pencil-square-o #Fontawesome
+      subsubfolderitems:
+       - page: Toolbar
+         url: /ui-patterns/tools/toolbar/
+         thumb-position: bottom
+         tags: [Tools]
+       - page: Call to action button
+         url: /ui-patterns/tools/call-to-action-button/
+         thumb-position: bottom
+         tags: [Tools]
+       - page: Dashboards
+         url: /ui-patterns/tools/dashboard/
+         thumb-position: top
+         tags: [Tools]
+       - page: Bulk actions
+         url: /ui-patterns/tools/bulk-actions/
+         thumb-position: top
+         tags: [Tools]
+       - page: Inline actions
+         url: /ui-patterns/tools/inline-actions/
+         thumb-position: top
+         tags: [Tools]
+       - page: Contextual tools
+         url: /ui-patterns/tools/contextual-tools/
+         thumb-position: center
+         tags: [Tools]
+       - page: Multi state buttons
+         url: /ui-patterns/tools/multi-state-buttons/
+         thumb-position: top
+         tags: [Tools]
+       - page: Lock screen controls
+         url: /ui-patterns/tools/lock-screen-controls/
+         thumb-position: center
+         tags: [Tools]
+    #Help
+    - page: Help
+      #url: /ui-patterns/help/
+      description: Learn how to use an app
+      icon: fa-question-circle #Fontawesome
+      subsubfolderitems:
+       - page: How to
+         url: /ui-patterns/help/how-to/
+         thumb-position: top
+         tags: [Help]
+       - page: Contextual Help
+         url: /ui-patterns/help/contextual-help/
+         thumb-position: top
+         tags: [Help]
+       - page: User guide
+         url: /ui-patterns/help/user-guide/
+         thumb-position: bottom
+         tags: [Help]
+       - page: Tutorials
+         url: /ui-patterns/help/tutorials/
+         thumb-position: center
+         tags: [Help]
+       - page: Persistent invitations
+         url: /ui-patterns/help/persistent-invitations/
+         thumb-position: top
+         tags: [Help]
+       - page: Discoverable invitations
+         url: /ui-patterns/help/discoverable-invitations/
+         thumb-position: top
+         tags: [Help]
+    #User on-boarding
+    - page: User on-boarding
+      #url: /ui-patterns/user-on-boarding/
+      description: Get acquainted with an app
+      icon: fa-user-plus #Fontawesome
+      subsubfolderitems:
+       - page: Tips
+         url: /ui-patterns/user-on-boarding/tips/
+         thumb-position: top
+         tags: [User on-boarding]
+       - page: Coach marks
+         url: /ui-patterns/user-on-boarding/coach-marks/
+         thumb-position: center
+         tags: [User on-boarding]
+       - page: Hotspots
+         url: /ui-patterns/user-on-boarding/hotspots/
+         thumb-position: top
+         tags: [User on-boarding]
+       - page: Action driven tooltips
+         url: /ui-patterns/user-on-boarding/action-driven-tooltips/
+         thumb-position: top
+         tags: [User on-boarding]
+       - page: Welcome messages
+         url: /ui-patterns/user-on-boarding/welcome-messages/
+         thumb-position: top
+         tags: [User on-boarding]
+       - page: Product tours
+         url: /ui-patterns/user-on-boarding/product-tours/
+         thumb-position: top
+         tags: [User on-boarding]
+       - page: Persona-based user on-boarding
+         url: /ui-patterns/user-on-boarding/persona-based-user-on-boarding/
+         thumb-position: top
+         tags: [User on-boarding]
+       - page: Progress bars
+         url: /ui-patterns/user-on-boarding/progress-bars/
+         thumb-position: top
+         tags: [User on-boarding]
+       - page: Check lists
+         url: /ui-patterns/user-on-boarding/check-lists/
+         thumb-position: top
+         tags: [User on-boarding]
+    #Social
+    - page: Social
+      #url: /ui-patterns/social/
+      description: Connecting with social media
+      icon: fa-smile-o #Fontawesome
+      subsubfolderitems:
+       - page: Following
+         url: /ui-patterns/social/following/
+         thumb-position: center
+         tags: [Social]
+       - page: Connecting
+         url: /ui-patterns/social/connecting/
+         thumb-position: center
+         tags: [Social]
+       - page: Groups
+         url: /ui-patterns/social/groups/
+         thumb-position: bottom
+         tags: [Social]
+       - page: Social registration
+         url: /ui-patterns/social/social-registration/
+         thumb-position: top
+         tags: [Social]
+    #Other
+    - page: Other
+      #url: /ui-patterns/other/
+      description: Gamification, skeumorphic, etc.
+      icon: fa-spinner #Fontawesome
+      subsubfolderitems:
+       - page: Gamification
+         url: /ui-patterns/other/gamification/
+         thumb-position: top
+         tags: [Other]
+       - page: Skeumorphic
+         url: /ui-patterns/other/skeumorphic/
+         thumb-position: top
+         tags: [Other]

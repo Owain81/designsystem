@@ -1,0 +1,25 @@
+// Principle colors
+$principle-color-useful: $color-darkgrey-unit4;
+$principle-color-acceptable: #2fadd3;
+$principle-color-identifiable: #afca22;
+$principle-color-friendly: #ea7d00;
+
+// Principles model
+$principles-model-width: 100%;
+$principles-model-max-width: 540px;
+$principles-model-margin: 48px 0;
+
+// Principles icon
+$principles-icon-width: 128px;
+$principles-icon-height: 119px;
+$principles-icon-margin-right: 44px;
+$principles-icon-margin-bottom: 30px;
+
+// Principles chips
+$principles-chips-min-height: 27px;
+$principles-chips-margin-top: 12px;
+$principles-chips-margin-right: 16px;
+$principles-chips-padding: 0 px-to-rem(20px);
+$principles-chips-border-radius: 27px;
+$principles-chips-color: $color-white;
+$principles-chips-font-weight: $open-sans-bold;

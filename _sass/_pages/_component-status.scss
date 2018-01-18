@@ -1,0 +1,84 @@
+.current-version {
+  margin: $current-version-margin;
+}
+
+.status-list {
+  margin: $status-list-margin;
+
+  >span {
+    display: inline-block;
+    margin-right: $status-list-element-margin-right;
+
+    i {
+      margin-right: $status-list-icon-margin-right;
+    }
+  }
+}
+
+.status-description {
+  margin-top: $tag-descriptions-margin-top;
+  overflow: hidden;
+
+  i {
+    margin-right: $status-list-icon-margin-right;
+  }
+
+  .row {
+    margin-bottom: $tag-descriptions-row-margin-bottom;
+  }
+
+  .tags {
+    position: relative;
+    margin-left: 0;
+    float: left;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .component-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+
+    td {
+      white-space: nowrap;
+    }
+  }
+}
+
+.component-table,
+.status-description {
+  max-width: $component-table-max-width;
+}
+
+.component-name {
+  margin-right: $component-table-name-margin-right;
+}
+
+.tags {
+  display: inline-block;
+  padding: $component-table-tag-padding;
+  border-radius: $component-table-tag-border-radius;
+  background-color: $component-table-tag-background-color;
+  color: $color-black;
+  font-size: $component-table-tag-font-size;
+  vertical-align: text-top;
+}
+
+// Status icons colors
+.status-list,
+.component-table,
+.status-description {
+  .fa-check {
+    color: $component-table-ready-icon-color;
+  }
+
+  .fa-wrench,
+  .fa-eye {
+    color: $component-table-inprogress-icon-color;
+  }
+
+  .fa-times {
+    color: $component-table-depricated-icon-color;
+  }
+}

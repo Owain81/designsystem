@@ -1,0 +1,75 @@
+html {
+  font-size: $font-base-size;
+}
+
+body {
+  color: $color-darkgrey-unit4;
+  font-family: $open-sans;
+  font-size: 100%;
+  line-height: $base-line-height;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4 {
+  font-weight: $open-sans-bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-darkgrey-unit4;
+}
+
+h1 {
+  margin: 0 0 px-to-rem($margin-bottom-h1);
+  font-size: $font-size-h1;
+  line-height: $line-height-h1;
+}
+
+h2 {
+  margin: 0 0 px-to-rem($margin-bottom-h2);
+  font-size: $font-size-h2;
+  line-height: $line-height-h2;
+}
+
+h3 {
+  margin: 0 0 px-to-rem($margin-bottom-h3);
+  font-size: $font-size-h3;
+  line-height: $line-height-h3;
+}
+
+h4 {
+  margin: 0 0 px-to-rem($margin-bottom-h4);
+  font-size: $font-size-h4;
+  line-height: $line-height-h4;
+}
+
+h5 {
+  margin: 0 0 px-to-rem($margin-bottom-h5);
+  font-size: $font-size-h5;
+  line-height: $line-height-h5;
+}
+
+h6 {
+  margin: 0 0 px-to-rem($margin-bottom-h6);
+  font-size: $font-size-h6;
+  line-height: $line-height-h6;
+}
+
+// Code
+pre {
+  code {
+    font-size: $font-size-code;
+  }
+}

@@ -1,0 +1,10 @@
+// This stylesheet is only used inside the iframe used to render a component in
+// the styleguide. It only makes the demo a bit better.
+
+// 1. Apply a light non-branded background color to be able to inspect
+//   components with a white background more easily.
+// 2. Prevent the component from sticking to the edges of the iframe.
+
+body {
+  background-color: $iframe-background-color;
+}

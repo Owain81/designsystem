@@ -1,0 +1,134 @@
+// Sidebar
+$sidebar-width: 272px;
+$sidebar-border-right: 1px solid $color-grey-34;
+$sidebar-list-top: 140px;
+$sidebar-background-color: $color-white;
+// Sidebar header
+$sidebar-search-height: 36px;
+$sidebar-header-height: $sidebar-list-top;
+$sidebar-header-padding-left: px-to-rem(24px);
+$sidebar-header-padding-top: px-to-rem(47px);
+$sidebar-colorbar-height: 4px;
+$sidebar-colorbar-gradient-from: #aab1b6;
+$sidebar-colorbar-gradient-to: #fff;
+$sidebar-colorbar-gradient: linear-gradient(to right, $color-scheme-u4blue 24px, $color-scheme-u4orange 10px, $color-scheme-u4orange 60px, $sidebar-colorbar-gradient-from 16%, $sidebar-colorbar-gradient-from 51%, $color-scheme-u4darkgreen 51%);
+// Sidebar brand
+$sidebar-logo-height: 23px;
+$sidebar-logo-width: 189px;
+$sidebar-logo-color: $color-grey-unit4;
+$sidebar-brand-version-font-size: px-to-rem(12px);
+$sidebar-brand-version-font-color: $color-darkgrey-unit4;
+$sidebar-brand-version-font-family: $open-sans;
+$sidebar-brand-version-font-weight: $open-sans-light;
+$sidebar-brand-version-margin-top: px-to-rem(4px);
+$sidebar-brand-version-line-height: 1.25;
+// Sidebar hamburger
+$sidebar-hamburger-height: 32px;
+$sidebar-hamburger-top: 10px;
+$sidebar-hamburger-left: set-space(s);
+$sidebar-hamburger-width: 32px;
+$sidebar-hamburger-bar-height: 3px;
+$sidebar-hamburger-bar-top: 8px;
+$sidebar-hamburger-bar-space: 6px;
+$sidebar-hamburger-color: $color-grey-120;
+$sidebar-hamburger-collapsed-color: $color-white;
+// Sidebar overlay
+$sidebar-overlay-background-color: $color-grey-120;
+$sidebar-overlay-opacity: .6;
+$sidebar-overlay-breakpoint: lg; // 1200px
+// Sidebar items
+$sidebar-item-font-size: $font-base-size;
+$sidebar-item-font-color: $color-grey-120;
+$sidebar-item-line-height: 1.25;
+$sidebar-item-vertical-padding: px-to-rem(12px);
+$sidebar-item-left-padding: px-to-rem(24px);
+$sidebar-item-right-padding: px-to-rem(15px);
+$sidebar-item-border-bottom: 1px solid $color-grey-12;
+$sidebar-item-hover-color: $color-black;
+$sidebar-item-hover-background-color: $color-grey-8;
+$sidebar-item-active-font-weight: $open-sans-bold;
+$sidebar-item-active-background: linear-gradient(to right, $color-blue 4px, $color-paleblue 5px);
+// Sidebar dropdown
+$sidebar-dropdown-item-vertical-padding: px-to-rem(6px);
+$sidebar-dropdown-item-left-padding: px-to-rem(40px);
+$sidebar-dropdown-submenu-item-left-padding: px-to-rem(55px);
+$sidebar-dropdown-item-right-padding: $sidebar-item-right-padding;
+// Sidebar items icons
+$sidebar-item-icon-size: 18px;
+$sidebar-item-icon-color: #9aa2a8;
+
+
+@mixin dynamic-sidebar-spacing($property) {
+  @include media-breakpoint-up(md) {
+    @if $property == 'horizontal-padding' {
+      padding-right: px-to-rem($grid-gutter-width-md);
+      padding-left: px-to-rem($grid-gutter-width-md);
+    }
+    @if $property == 'left' {
+      left: $grid-gutter-width-md - 8;
+    }
+    @if $property == 'padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-md);
+    }
+    @if $property == 'submenu-padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-md + 16);
+    }
+    @if $property == 'subsubmenu-padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-md + 32);
+    }
+  }
+  @include media-breakpoint-down(md) {
+    @if $property == 'horizontal-padding' {
+      padding-right: px-to-rem($grid-gutter-width-md);
+      padding-left: px-to-rem($grid-gutter-width-md);
+    }
+    @if $property == 'left' {
+      left: $grid-gutter-width-md - 8;
+    }
+    @if $property == 'padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-md);
+    }
+    @if $property == 'submenu-padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-md + 16);
+    }
+    @if $property == 'subsubmenu-padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-md + 32);
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    @if $property == 'horizontal-padding' {
+      padding-right: px-to-rem($grid-gutter-width-sm);
+      padding-left: px-to-rem($grid-gutter-width-sm);
+    }
+    @if $property == 'left' {
+      left: $grid-gutter-width-sm - 8;
+    }
+    @if $property == 'padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-sm);
+    }
+    @if $property == 'submenu-padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-sm + 16);
+    }
+    @if $property == 'subsubmenu-padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-sm + 32);
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    @if $property == 'horizontal-padding' {
+      padding-right: px-to-rem($grid-gutter-width-xs);
+      padding-left: px-to-rem($grid-gutter-width-xs);
+    }
+    @if $property == 'left' {
+      left: $grid-gutter-width-xs - 8;
+    }
+    @if $property == 'padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-xs);
+    }
+    @if $property == 'submenu-padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-xs + 16);
+    }
+    @if $property == 'subsubmenu-padding-left' {
+      padding-left: px-to-rem($grid-gutter-width-xs + 32);
+    }
+  }
+}

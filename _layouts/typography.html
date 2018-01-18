@@ -1,0 +1,112 @@
+{% capture paragraph-style %} style="font-size: {{ page.font-size }}; line-height: {{ page.line-height }}; color: {{ page.color-hex }}" {% endcapture %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--default">
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% include website/header.html breadcrumbs="true" %}
+		<div class="container-fluid main-content">
+			<div class="row">
+				<div class="col">
+					{{ content }}
+					<div class="icon__btn-download">
+                        <a href="{{ site.baseurl }}/resources/DagnyCompPro.zip" class="btn btn-outline-primary">Download Font Family</a>
+                    </div>
+					<div class="table-of-contents"></div>
+					<h2 id="fonts">Fonts</h2>
+					<div class="typography__fonts">
+						{%- for fonts in page.fonts -%}
+						<div class="row hammerite">
+							<div class="col-sm-3 {{ fonts.modifier }}"><p {{ paragraph-style }} class="mb-8">{{ fonts.font }}</p></div>
+							<div class="col-sm-9 {{ fonts.modifier }}"><p {{ paragraph-style }}><span class="bigger">Abc</span><br />{{ page.sample-text }}</p>
+							</div>
+						</div>
+						{%- endfor -%}
+					</div>
+
+					<h2 id="headings">Headings</h2>
+					{{ page.headings-intro | markdownify }}
+					<table class="table table--no-row-lines">
+						<thead>
+							<tr>
+								<th class="w-30">Name</th>
+								<th class="w-20">Font size</th>
+								<th class="w-20 hidden-xs-down">Line height</th>
+								<th class="w-30">Usage</th>
+							</tr>
+						</thead>
+						<tbody>
+							{%- for headings in page.headings -%}
+							{% capture header-style %} style="font-size: {{ headings.font-size }}; line-height: {{ headings.line-height }}; padding: {{ headings.padding }}; color: {{ page.color-hex }}" {% endcapture %}
+							<tr>
+								<td class="w-30 hammerite"><{{ headings.header }} {{ header-style }}><span class="headings__header">{{ headings.header }}</span> <span class="hidden-sm-down">{{ page.header-text }}</span></{{ headings.header }}></td>
+								<td class="w-20">{{ headings.font-size }}</td>
+								<td class="w-20 hidden-xs-down">{{ headings.line-height }}</td>
+								<td class="w-30">{{ headings.usage }}</td>
+							</tr>
+							{%- endfor -%}
+						</tbody>
+					</table>
+
+					<h2 id="paragraphs">Paragraphs</h2>
+          <div class="paragraph hidden-sm-up">
+            <p {{ paragraph-style }} class="hammerite">Example paragraph. {{ page.paragraph-text }}</p>
+          </div>
+					<table class="table table--no-row-lines typography__paragraphs">
+						<thead>
+							<tr>
+								<th class="w-30 hidden-xs-down">Example</th>
+								<th class="w-20">Font size</th>
+								<th class="w-20">Line height</th>
+								<th class="w-30">Color</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="w-30 hammerite hidden-xs-down"><p {{ paragraph-style }}>{{ page.paragraph-text }}</p></td>
+								<td class="w-20">{{ page.font-size }}</td>
+								<td class="w-20">{{ page.line-height }}</td>
+								<td class="w-30">{{ page.color }}</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2 id="hyperlinks">Hyperlinks</h2>
+
+					<table class="table table--no-row-lines">
+						<thead>
+							<tr>
+								<th class="w-30">Example</th>
+								<th class="w-20">Hover style</th>
+								<th class="w-50">Color</th>
+							</tr>
+						</thead>
+						<tbody>
+							{%- for hyperlinks in page.hyperlinks -%}
+							{% capture hyperlinks-style %} style="color: {{ hyperlinks.color-hex }};" {% endcapture %}
+							<tr>
+								<td class="w-30 hammerite">
+									<a class="{{ hyperlinks.modifier }}" {{ hyperlinks-style }} >{{ hyperlinks.sample-text }}</a>
+								</td>
+								<td class="w-20 hammerite">
+									<a class="{{ hyperlinks.modifier }}" {{ hyperlinks-style }}>{{ hyperlinks.hover-style }}</a>
+								</td>
+								<td class="w-50">{{ hyperlinks.color }}</td>
+							</tr>
+							{%- endfor -%}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	{% include website/scripts.html %}
+
+</body>
+
+</html>

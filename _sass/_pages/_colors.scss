@@ -1,0 +1,88 @@
+.page--colors {
+  h4 {
+    margin: $color-page-h4-margin;
+  }
+
+  .tab-pane {
+    max-width: $main-content-max-width-without-gutter;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.tab--swatches {
+  h2 {
+    margin: $color-page-h2-margin;
+  }
+}
+
+.color {
+  padding: $color-padding;
+  color: $color-text-color;
+
+  .row:first-child {
+    >div:first-child {
+      padding-right: 0;
+    }
+
+    >div:last-child {
+      padding-left: 0;
+    }
+  }
+
+  &--black-and-white:not(.color--text-white) {
+    border: 1px solid $color-grey-18;
+    border-top: 0;
+  }
+
+  &__hex {
+    cursor: pointer;
+
+    &:hover {
+      .color-copy__button {
+        transform: $color-copy-hover-transform;
+      }
+    }
+  }
+}
+
+.is-touch .color-copy__button {
+  transform: $color-copy-hover-transform;
+}
+
+.color-copy {
+  position: relative;
+  width: $color-copy-width;
+  float: right;
+
+  &__button {
+    width: $color-copy-button-width;
+    height: auto;
+    margin-right: $color-copy-margin-right;
+    float: right;
+    transform: $color-copy-transform;
+    transition: $color-copy-transition;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+.copy-message {
+  position: absolute;
+  left: $color-copy-message-left;
+  transition: all $color-picker-motion-time $color-picker-motion-easing;
+  opacity: 0;
+
+  &.show {
+    left: $color-copy-message-show-left;
+    opacity: 1;
+  }
+}
+
+.usage__color {
+  table {
+    >tbody>tr:first-child>td {
+      width: 25%;
+    }
+  }
+}

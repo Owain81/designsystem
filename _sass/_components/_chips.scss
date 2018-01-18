@@ -1,0 +1,29 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: $chips-item-margin;
+    padding: $chips-item-padding;
+    border: $chips-item-border;
+    border-radius: $chips-item-border-radius;
+    cursor: pointer;
+    color: $chips-item-color;
+    font-size: $chips-item-font-size;
+    line-height: $chips-item-line-height;
+
+    &:hover,
+    &--active {
+      background-color: $chips-item-hover-background-color;
+      color: $chips-item-hover-color;
+    }
+
+    &--in-card {
+      border: 0;
+      background-color: $chips-item-in-card-bg-color;
+      font-size: $chips-item-in-card-font-size;
+    }
+  }
+}

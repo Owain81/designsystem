@@ -1,0 +1,16 @@
+// Navigation motion
+
+$navigation-motion-easing: cubic-bezier(.45, 0, 0, 1);
+$navigation-motion-time: .26s;
+$navigation-element-hover-motion-time: .26s;
+
+// Color picker motion
+
+$color-picker-motion-easing: $navigation-motion-easing;
+$color-picker-motion-time: $navigation-element-hover-motion-time;
+
+// Header motion
+/// http://ux.unit4.com/artifacts/motion/#curves --> smooth
+
+$header-motion-easing: cubic-bezier(.3, .4, 0, 1);
+$header-motion-time: .3s;

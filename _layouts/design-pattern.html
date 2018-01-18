@@ -1,0 +1,90 @@
+{% capture design-pattern-image %}<div><img class="img-fluid" src="{{ site.baseurl }}/images/design-patterns/design-pattern-{{ page.title | slugify }}.png"></div>{% endcapture %}
+{% capture design-pattern-video %}
+<div class="embed-responsive embed-responsive--design-pattern {{ page.design-pattern-type }}">
+	<video class="embed-responsive-item">
+		<source src="{{ site.baseurl }}/images/design-patterns/design-pattern-video-{{ page.title | slugify }}.mp4" type="video/mp4">
+		<source src="{{ site.baseurl }}/images/design-patterns/design-pattern-video-{{ page.title | slugify }}.mov" type="video/mov">
+		Your browser does not support the video tag.
+	</video>
+	<div class="video-play"></div>
+	<div class="video-pause"></div>
+</div>
+{% endcapture %}
+{% capture design-pattern-extra-video %}
+<div class="embed-responsive embed-responsive--design-pattern">
+	<video class="embed-responsive-item">
+		<source src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-video-1 }}" type="video/mp4">
+		<source src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-video-1 }}" type="video/mov">
+		Your browser does not support the video tag.
+	</video>
+	<div class="video-play"></div>
+	<div class="video-pause"></div>
+</div>
+{% endcapture %}
+{% capture design-pattern-extra-image %}<div><img class="img-fluid" src="{{ site.baseurl }}/images/design-patterns/{{ page.extra-image-1 }}"></div>{% endcapture %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--default">
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% include website/header.html breadcrumbs="true" %}
+		<div class="container-fluid main-content">
+			{%- include website/ui-patterns/back-button.html -%}
+			<div class="row">
+				<div class="col{% if page.design-pattern-type == 'mobile' %}-12 col-lg-7 col-xl-8{% endif %}">
+
+					{% if page.design-pattern-type == 'desktop' %}
+						{% if page.design-pattern-video == null %}
+							{{ design-pattern-image }}
+							{% if page.extra-image-1 %}
+								{{ design-pattern-extra-image }}
+							{% endif %}
+						{% else %}
+							{{ design-pattern-video }}
+						{% endif %}
+					{% endif %}
+
+					<h3>What</h3>
+					{{ page.what | markdownify }}
+
+					<h3>Why</h3>
+					{{ page.why | markdownify }}
+
+					<h3>Do</h3>
+					<div class="design-pattern__list design-pattern__list--do">
+						{{ page.do | markdownify }}
+					</div>
+
+					<h3>Don't</h3>
+					<div class="design-pattern__list  design-pattern__list--dont">
+						{{ page.dont | markdownify }}
+					</div>
+				</div>
+				{% if page.design-pattern-type == 'mobile' %}
+				<div class="col-12 col-lg-5 col-xl-4">
+					{% if page.design-pattern-video == null %}
+						{{ design-pattern-image }}
+						{% if page.extra-image-1 %}
+							{{ design-pattern-extra-image }}
+						{% endif %}
+							{% if page.extra-video-1 %}
+								{{ design-pattern-extra-video }}
+							{% endif %}
+					{% else %}
+						{{ design-pattern-video }}
+					{% endif %}
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</main>
+
+	{% include website/scripts.html %}
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+$search-height: 64px !default;
+$search-padding: px-to-rem(4px) !default;
+$search-margin: -20px 0 40px !default;
+$search-background: $color-grey-8 !default;
+$search-offset-y: 2px;
+$search-blur-radius: 3px;
+$search-box-color: $color-grey-34 !default;
+$header-mobile-withtabs-top: 87px !default;
+$search-withtabs-top: 160px !default;
+$search-mobile-top: 48px !default;
+$search-top: 156px !default;
+
+$search-field-margin: 16px !default;
+$search-icon-size: px-to-rem(24px) !default;
+$search-icon-color: $color-grey-65 !default;
+
+$search-placeholder-font: 'LucidaGrande' !default;
+$search-placeholder-size: px-to-rem(18px) !default;
+$search-placeholder-color: $color-grey-110 !default;
+
+// Search no result
+$search-no-result-icon-size: 93px;
+$search-no-result-padding: px-to-rem($search-no-result-icon-size) 0 0;
+$search-no-result-icon-color: $color-grey-34;
+$search-no-result-h2: $color-grey-110;

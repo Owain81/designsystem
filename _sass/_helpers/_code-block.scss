@@ -1,0 +1,21 @@
+// Code block
+
+$code-block-border: 1px solid $color-grey-34;
+$code-block-button-right: 0;
+$code-block-button-padding: px-to-rem(4px) px-to-rem(10px);
+$code-block-button-background: $color-grey-8;
+$code-block-button-icon-color: $color-blue;
+$code-block-button-show-more-transition: transform .23s ease-in-out;
+$code-block-button-show-more-bottom: 0;
+$code-block-copy-message-left: -60px;
+$code-block-copy-message-show-left: -65px;
+
+
+// Line numbers
+
+$code-block-line-numbers-padding: px-to-rem(16px) px-to-rem(16px) px-to-rem(16px) px-to-rem(60px);
+$code-block-line-numbers-rows-top: px-to-rem(-19px);
+$code-block-line-numbers-rows-left: px-to-rem(-60px);
+$code-block-line-numbers-rows-padding: px-to-rem(17px) 0;
+$code-block-line-numbers-rows-background: $color-grey-8;
+$code-block-line-numbers-rows-color: $color-darkgrey-unit4;

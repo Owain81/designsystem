@@ -1,0 +1,160 @@
+{% capture source %}{{ site.baseurl }}/{{ page.category }}/{{ page.title | replace:' ','-' | downcase }}/source.html {% endcapture %}
+{% capture html %}{{ site.baseurl }}/{{ page.category }}/{{ page.title | replace:' ','-' | downcase }}.html {% endcapture %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="wf-loading">
+
+{% include head.html %}
+
+<body class="page--component">
+	{% include website/navigation.html %}
+	<main class="main" aria-label="Content">
+		{% if page.style %}
+			{% include website/header.html tab1="Code" tab2="Usage" tab2="Style" breadcrumbs="true" %}
+		{% else %}
+			{% include website/header.html tab1="Code" tab2="Usage" breadcrumbs="true" %}
+		{% endif %}
+		<div class="container-fluid main-content">
+			<div class="row">
+				<div class="col">
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="code">
+							<div class="table-of-contents"></div>
+							<div class="paragraph">
+							  {{ content }}
+							</div>
+
+							<h2 id="component-section-title">Component preview</h2>
+							<div class="component-section">
+								<ul class="nav nav-tabs component-preview-nav-tabs" role="tablist">
+									{% if page.viewport-switch %}
+									<li class="nav-item" role="presentation">
+										<a class="nav-link" href="#small" title="Small" aria-controls="small" role="tab" data-toggle="tab"><i class="fa fa-mobile" aria-hidden="true"></i><span class="hidden-sm-down">Small</span></a>
+									</li>
+									<li class="nav-item" role="presentation">
+										<a class="nav-link" href="#medium" title="Medium" aria-controls="medium" role="tab" data-toggle="tab"><i class="fa fa-tablet" aria-hidden="true"></i><span class="hidden-sm-down">Medium</span></a>
+									</li>
+									<li class="nav-item" role="presentation">
+										<a class="nav-link active" href="#large" title="Large" aria-controls="large" role="tab" data-toggle="tab"><i class="fa fa-desktop" aria-hidden="true"></i><span class="hidden-sm-down">Large</span></a>
+									</li>
+									{% endif %}
+									<li class="nav-item ml-auto" role="presentation">
+										<a class="nav-link" href="{{ source }}" title="Open in fullscreen" aria-controls="full" role="tab" target="_blank">
+											<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+											<span class="hidden-sm-down">Open in fullscreen</span>
+										</a>
+									</li>
+								</ul>
+								<div class="component-preview{% if page.viewport-switch %} is-tabs{% endif %}">
+
+									<div class="tab-content">
+										<div role="tabpanel" class="tab-pane active" id="small">
+											<iframe src="{{ source }}" title="{{ title }}"></iframe>
+										</div>
+									</div>
+								</div>
+								<div class="code-block">
+									<button type="button" class="copy-clipboard">
+										<div class="copy-message"></div>
+										<i class="fa fa-files-o" aria-hidden="true"></i>
+									</button>
+									<div>{% highlight html %}{% include {{ page.category }}/{{ page.title | replace:' ','-' | downcase }}.html %}{% endhighlight %}</div>
+									<button class="show-more"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+									<script>
+										document.querySelectorAll('.code-block pre')[0].className += ' line-numbers';
+									</script>
+								</div>
+							</div>
+
+							<div class="paragraph">
+							  {{ page.additional-description | markdownify }}
+							</div>
+
+
+              {% if page.variations %}
+                  <h2 id="attributes">Variations</h2>
+                  <table class="table table--attributes">
+                      <thead>
+                          <tr>
+                              <th>Class name</th>
+                              <th>Usage</th>
+                          </tr>
+                      </thead>
+                      {%- for modifier in page.modifiers -%}
+                          <tr>
+                              {% if modifier.selector %}
+                                  <td class="table__selector">{{ modifier.selector }}</td>
+                              {% endif %}
+                              {% if modifier.summary %}
+                                  <td>{{ modifier.summary }}</td>
+                              {% endif %}
+                          </tr>
+                      {%- endfor -%}
+                  </table>
+              {% endif %}
+						</div>
+						<div role="tabpanel" class="tab-pane" id="usage">
+							<div class="table-of-contents"></div>
+							{{ page.usage | markdownify }}
+
+							{% if page.do-and-dont %}
+								<h2 id="do-and-dont">Do’s and Dont’s</h2>
+								<div class="row mb-20 do-and-dont__section">
+									{%- for do-and-dont in page.do-and-dont -%}
+										<div class="col-12 col-sm-{{ do-and-dont.columns }} mb-28 {% cycle 'odd', 'even' %}">
+											<div class="do-and-dont">
+												<div class="do-and-dont__image mb-20 {% if do-and-dont.overlay == true %}do-and-dont__image--overlay{% endif %}
+													{% if do-and-dont.title == "Do" or do-and-dont.title == "Consider" %}
+														do-and-dont__image--do
+													{% else %}
+														do-and-dont__image--dont
+													{% endif %}">
+													<img class="img-fluid" src="{{ site.baseurl }}/images/components/{{ page.title | slugify }}/do-dont-image-{{ forloop.index }}.svg">
+												</div>
+												<h4 class="do-and-dont__title {% if do-and-dont.title == "Do" or do-and-dont.title == "Consider" %}do-and-dont__title--do{% else %}do-and-dont__title--dont{% endif %}">{{ do-and-dont.title }}</h4>
+												<div class="do-and-dont__text">
+													{{ do-and-dont.text | markdownify }}
+												</div>
+											</div>
+										</div>
+									{%- endfor -%}
+								</div>
+							{% endif %}
+
+							{% if page.placement %}
+								<h2 id="placement">Placement</h2>
+								<div class="row mb-48 placement__section">
+									{%- for placement in page.placement -%}
+										<div class="col-12 col-sm-6 placement__wrapper">
+											<h4 class="placement__title">{{ placement.title }}</h4>
+											<p class="mb-16">{{ placement.text }}</p>
+											<div class="placement__image mb-8">
+												<img class="img-fluid" src="{{ site.baseurl }}/images/components/{{ page.title | slugify }}/placement-image-{{ forloop.index }}.svg">
+											</div>
+											<div class="placement__caption">
+												{{ placement.caption }}
+											</div>
+										</div>
+									{%- endfor -%}
+								</div>
+							{% endif %}
+
+							{% if page.related %}
+								<h2 id="related">Related</h2>
+								{%- for related in page.related -%}
+									{% capture linkrelated %}{{ related | replace: " ", "-" | downcase }}{% endcapture %}
+									<span class="related__element"><a href="{{ site.baseurl }}/components/{{ linkrelated }}/">{{ related }}</a></span>
+								{%- endfor -%}
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	{% include website/scripts.html %}
+
+</body>
+
+</html>

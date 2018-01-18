@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="373px" height="264px" viewBox="0 0 373 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Z Pattern</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.5%" y="-2.4%" width="105.0%" height="107.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.298039216   0 0 0 0 0.325490196   0 0 0 0 0.345098039  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="363" height="254"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buttons-Usage-extra-large-1200" transform="translate(-331.000000, -2241.000000)">
+            <g id="Z-Pattern" filter="url(#filter-1)" transform="translate(336.000000, 2243.000000)">
+                <g id="Rectangle-12">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#D2D6D9" stroke-width="1" x="0.5" y="0.5" width="362" height="253"></rect>
+                </g>
+                <rect id="Rectangle-13" fill="#EFF1F1" x="24" y="25" width="113" height="20" rx="10"></rect>
+                <rect id="Rectangle-13-Copy" fill="#EFF1F1" x="24" y="64" width="311" height="13" rx="6.5"></rect>
+                <rect id="Rectangle-13-Copy-2" fill="#EFF1F1" x="24" y="85" width="311" height="13" rx="6.5"></rect>
+                <rect id="Rectangle-13-Copy-3" fill="#EFF1F1" x="24" y="106" width="222" height="13" rx="6.5"></rect>
+                <rect id="Rectangle-2" stroke="#0D78AA" x="161.5" y="193.5" width="80" height="36" rx="2"></rect>
+                <rect id="Rectangle-2-Copy" fill="#0D78AA" x="254" y="193" width="81" height="37" rx="2"></rect>
+                <g id="Group-4" transform="translate(16.000000, 25.000000)">
+                    <rect id="Rectangle-4" fill="#AFC836" x="0" y="1" width="16" height="16" rx="8"></rect>
+                    <rect id="Rectangle-4-Copy" fill="#AFC836" x="312" y="1" width="16" height="16" rx="8"></rect>
+                    <rect id="Rectangle-4-Copy-2" fill="#AFC836" x="0" y="179" width="16" height="16" rx="8"></rect>
+                    <rect id="Rectangle-4-Copy-3" fill="#AFC836" x="272" y="179" width="16" height="16" rx="8"></rect>
+                    <polyline id="Path-2" stroke="#AFC836" stroke-width="2" points="10 9 320.214442 9 10 187 281.016605 187"></polyline>
+                    <polygon id="Triangle" fill="#AFC836" transform="translate(152.000000, 9.000000) rotate(90.000000) translate(-152.000000, -9.000000) " points="152 0 161 18 143 18"></polygon>
+                    <polygon id="Triangle-Copy" fill="#AFC836" transform="translate(152.000000, 187.000000) rotate(90.000000) translate(-152.000000, -187.000000) " points="152 178 161 196 143 196"></polygon>
+                    <polygon id="Triangle-Copy-2" fill="#AFC836" transform="translate(176.294229, 91.294229) rotate(-120.000000) translate(-176.294229, -91.294229) " points="176.294229 82.2942286 185.294229 100.294229 167.294229 100.294229"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

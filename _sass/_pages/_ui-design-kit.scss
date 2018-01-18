@@ -1,0 +1,26 @@
+.kit {
+  padding-left: $ui-kit-padding-left;
+  background-repeat: no-repeat;
+  background-size: $ui-kit-icon-size;
+
+  @include media-breakpoint-down(xs) {
+    padding-top: $ui-kit-mobile-padding-top;
+    padding-left: 0;
+  }
+
+  &__desc {
+    max-width: $ui-kit-content-max-width;
+  }
+
+  &--axure {
+    @include icon-axure;
+  }
+
+  &--sketch {
+    @include icon-sketch;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}

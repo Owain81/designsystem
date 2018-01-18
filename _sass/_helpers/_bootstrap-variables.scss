@@ -1,0 +1,120 @@
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:               12 !default;
+$grid-gutter-width-base:     32px !default;
+$grid-gutter-width-lg: 28px !default;
+$grid-gutter-width-md: 24px !default;
+$grid-gutter-width-sm: 20px !default;
+$grid-gutter-width-xs: 16px !default;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-xs,
+  sm: $grid-gutter-width-sm,
+  md: $grid-gutter-width-md,
+  lg: $grid-gutter-width-lg,
+  xl: $grid-gutter-width-base
+) !default;
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding: $table-padding;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer:   1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  8: (
+    x: ($spacer-x / 2),
+    y: ($spacer-y / 2)
+  ),
+  12: (
+    x: ($spacer-x / 1.333),
+    y: ($spacer-y / 1.333)
+  ),
+  16: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  20: (
+    x: ($spacer-x * 1.25),
+    y: ($spacer-y * 1.25)
+  ),
+  24: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  28: (
+    x: ($spacer-x * 1.75),
+    y: ($spacer-y * 1.75)
+  ),
+  32: (
+    x: ($spacer-x * 2),
+    y: ($spacer-y * 2)
+  ),
+  36: (
+    x: ($spacer-x * 2.25),
+    y: ($spacer-y * 2.25)
+  ),
+  48: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  ),
+  64: (
+    x: ($spacer-x * 4),
+    y: ($spacer-y * 4)
+  )
+) !default;
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: (
+  20: 20%,
+  25: 25%,
+  30: 30%,
+  50: 50%,
+  60: 60%,
+  75: 75%,
+  100: 100%
+) !default;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-x:             1rem !default;
+$alert-padding-y:             1rem !default;
+$alert-margin-bottom:         28px !default;
+$alert-border-radius:         0 !default;
+$alert-link-font-weight:      normal !default;
+$alert-border-width:          0 !default;
+
+// $alert-success-bg:            $state-success-bg !default;
+// $alert-success-text:          $state-success-text !default;
+// $alert-success-border:        $state-success-border !default;
+
+$alert-info-bg:               $color-paleblue !default;
+$alert-info-text:             $color-darkgrey-unit4 !default;
+// $alert-info-border:           $state-info-border !default;
+
+$alert-warning-bg:            $color-scheme-u4orange-10 !default;
+$alert-warning-text:          $color-darkgrey-unit4 !default;
+// $alert-warning-border:        $state-warning-border !default;
+
+// $alert-danger-bg:             $state-danger-bg !default;
+// $alert-danger-text:           $state-danger-text !default;
+// $alert-danger-border:         $state-danger-border !default;

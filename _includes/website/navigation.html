@@ -1,0 +1,119 @@
+<!-- Sidebar -->
+<div class="sidebar__overlay"></div>
+<div class="sidebar__hamburger">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+<nav id="sidebar" class="sidebar navbar navbar-fixed-top">
+	<div class="sidebar__header">
+		<div class="sidebar__brand">
+			<a class="sidebar__logo" href="{{ site.baseurl }}/">
+				{%- include website/images/unit4-design-system-logo.svg -%}
+			</a>
+		</div>
+		<div class="sidebar__brand sidebar__brand--version">
+			<a href="{{ site.baseurl }}/changelog/">Version {{ site.version }}</a>
+		</div>
+		<div class="sidebar__search">
+ 			{% include website/search.html %}
+ 		</div>
+	</div>
+	<div id="sidebar-wrapper" class="mCustomScrollbar" role="navigation" data-mcs-theme="minimal-dark">
+	  <ul class="nav sidebar-nav flex-column">
+	    {% assign sorted_pages = site.pages | sort:"order" %}
+      {%- for node in sorted_pages -%}
+        {% if node.category == 'introduction' %}
+          <li class="{% if node.url == page.url %}active{% endif %}">
+            <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+          </li>
+        {% endif %}
+    	{%- endfor -%}
+
+	    <!-- Design patterns -->
+			{%- for node in site.pages -%}
+				{%- if node.layout == 'design-pattern-overview' -%}
+					<li class="{% if node.url == page.url %}active{% endif %}">
+						<a href="{{ site.baseurl }}/ui-patterns/">UI Patterns</a>
+					</li>
+				{%- endif -%}
+			{%- endfor -%}
+	    <!-- End of Design patterns -->
+			<!-- Guidelines -->
+	    <li class="dropdown {%- for node in site.pages -%}{% if node.category == 'guidelines' or node.category == 'motion' %}{% if node.url == page.url %} open{% endif %}{% endif %}{%- endfor -%}">
+	      <a  href="#" class="dropdown-toggle {%- for node in site.pages -%}{% if node.category == 'guidelines' or node.category == 'motion' %}{% if node.url == page.url %} active{% endif %}{% endif %}{%- endfor -%}">Guidelines<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+	      <ul class="dropdown-menu" role="menu" style="{%- for node in site.pages -%}{% if node.category == 'guidelines' or node.category == 'motion'%}{% if node.url == page.url %}display:block{% endif %}{% endif %}{%- endfor -%}">
+	        {% assign sorted_pages = site.pages | sort:"order" %}
+	        {%- for node in sorted_pages -%}
+	          {% if node.category == 'guidelines' %}
+	            <li class="{% if node.url == page.url %}active{% endif %}">
+	              <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+	            </li>
+	          {% endif %}
+	        {%- endfor -%}
+		      <li class="dropdown {%- for node in site.pages -%}{% if node.category == 'motion' %}{% if node.url == page.url %} open{% endif %}{% endif %}{%- endfor -%}">
+			      <a  href="#" class="dropdown-toggle {%- for node in site.pages -%}{% if node.category == 'motion' %}{% if node.url == page.url %} active{% endif %}{% endif %}{%- endfor -%}">Motion design<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+			      <ul class="dropdown-menu" role="menu" style="{%- for node in site.pages -%}{% if node.category == 'motion' %}{% if node.url == page.url %}display:block{% endif %}{% endif %}{%- endfor -%}">
+			        {% assign sorted_pages = site.pages | sort:"order" %}
+			        {%- for node in sorted_pages -%}
+			          {% if node.category == 'motion' %}
+			            <li class="{% if node.url == page.url %}active{% endif %}">
+			              <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+			            </li>
+			          {% endif %}
+			        {%- endfor -%}
+			      </ul>
+			    </li>
+	      </ul>
+	    </li>
+			<!-- End of Guidelines -->
+			<!-- Components -->
+	    {%- for node in site.pages -%}
+	      {% if node.category == 'status' %}
+	        <li class="{% if node.url == page.url %}active{% endif %}">
+	          <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+	        </li>
+	      {% endif %}
+	    {%- endfor -%}
+	    <li class="dropdown {%- for node in site.pages -%}{% if node.category == 'components' %}{% if node.url == page.url %} open{% endif %}{% endif %}{%- endfor -%}">
+	      <a  href="#" class="dropdown-toggle {%- for node in site.pages -%}{% if node.category == 'components' %}{% if node.url == page.url %} active{% endif %}{% endif %}{%- endfor -%}">Components<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+	      <ul class="dropdown-menu" role="menu" style="{%- for node in site.pages -%}{% if node.category == 'components' %}{% if node.url == page.url %}display:block{% endif %}{% endif %}{%- endfor -%}">
+	        {% assign sorted_pages = site.pages | sort:"order" %}
+	        {%- for node in sorted_pages -%}
+	          {% if node.category == 'components' %}
+	            <li class="{% if node.url == page.url %}active{% endif %}">
+	              <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+	            </li>
+	          {% endif %}
+	        {%- endfor -%}
+	      </ul>
+	    </li>
+			<!-- End of Components -->
+			<!-- Resources -->
+	    <li class="dropdown {%- for node in site.pages -%}{% if node.category == 'resources' %}{% if node.url == page.url %} open{% endif %}{% endif %}{%- endfor -%}">
+	      <a  href="#" class="dropdown-toggle {%- for node in site.pages -%}{% if node.category == 'resources' %}{% if node.url == page.url %} active{% endif %}{% endif %}{%- endfor -%}">Resources<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+	      <ul class="dropdown-menu" role="menu" style="{%- for node in site.pages -%}{% if node.category == 'resources' %}{% if node.url == page.url %}display:block{% endif %}{% endif %}{%- endfor -%}">
+	        {% assign sorted_pages = site.pages | sort:"order" %}
+          {%- for node in sorted_pages -%}
+            {% if node.category == 'resources' %}
+              <li class="{% if node.url == page.url %}active{% endif %}">
+                <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+              </li>
+	          {% endif %}
+	        {%- endfor -%}
+	      </ul>
+	    </li>
+			<!-- End of Resources -->
+			<!-- Collaborate -->
+	    {%- for node in site.pages -%}
+        {% if node.category == 'collaborate' %}
+          <li class="{% if node.url == page.url %}active{% endif %}">
+            <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+          </li>
+        {% endif %}
+      {%- endfor -%}
+			<!-- End of Collaborate -->
+	  </ul>
+	</div>
+</nav>
+<!-- /sidebar-wrapper -->

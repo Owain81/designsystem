@@ -1,0 +1,38 @@
+[{%- for page in site.pages -%}
+	{%- if 	page.title != "" and page.url != "/search-index/" and page.url != "/search-results/"  -%}
+		{%- if page.url contains 'source.html' -%}
+		{% else %}
+		{
+			"title" : "{{ page.title }}",
+			"url" : "{{ site.baseurl }}{{ page.url }}",
+			"description" : "{{ page.description | strip_html }}",
+			"tags" : {{ page.tags| jsonify }},
+			"content" : {{ page.content
+							| append: page.usage-tables
+							| append: page.usage-introduction
+							| append: page.usage-tips
+							| append: page.headings-intro
+							| append: page.contribute
+							| append: page.bugs
+							| append: page.ready
+							| append: page.in-progress
+							| append: page.deprecated
+							| append: page.under-review
+							| append: page.new
+							| append: page.updated
+							| append: page.intro
+							| append: page.principles
+							| append: page.what
+							| append: page.why
+							| append: page.do
+							| append: page.dont
+							| append: page.usage
+							| append: page.do-and-dont
+							| append: page.kits
+							| strip_html
+							| jsonify }}
+		},
+		{%- endif -%}
+	{%- endif -%}
+{%- endfor -%}
+{}]

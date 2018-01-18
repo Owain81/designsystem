@@ -1,0 +1,57 @@
+table,
+.table {
+  margin-bottom: $table-margin-bottom;
+
+  thead>tr>th {
+    padding: $table-header-padding;
+    border-top: 0;
+    border-bottom: $table-head-border-bottom-width $table-head-border-bottom-style $table-head-border-bottom-color;
+    font-size: $table-head-font-size;
+    font-weight: $table-head-font-weight;
+    line-height: $table-head-line-height;
+    @include media-breakpoint-down(md) {
+      font-size: $table-head-mobile-font-size;
+    }
+  }
+
+  >tbody>tr>td {
+    color: $table-font-color;
+    vertical-align: middle;
+  }
+
+  >tbody>tr>td,
+  >tbody>tr>th,
+  >tfoot>tr>td,
+  >tfoot>tr>th,
+  >thead>tr>td {
+    padding: $table-padding;
+    border-bottom: $table-border-bottom;
+  }
+
+  &__selector {
+    width: 25%;
+  }
+
+  &--no-row-lines {
+    >tbody>tr>td {
+      border-top: 0;
+      border-bottom: 0;
+    }
+  }
+
+  &--first-column-25 {
+    tr > td:first-child {
+      width: 25%;
+    }
+  }
+
+  &--two-columns-25 {
+    tr > td:nth-child(-n+2) {
+      width: 25%;
+    }
+  }
+
+  img {
+    margin: set-space(s) 0;
+  }
+}

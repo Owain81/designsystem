@@ -1,0 +1,23 @@
+<div class="color {% if include.black-and-white == 'true' %}color--black-and-white{% endif %} {% if colors.font-color == 'white' %}color--text-white{% endif %}" style="background-color: {{ colors.color }}; {% if colors.font-color == 'white' %}color: #fff; {% endif %}">
+	<div class="row">
+		<div class="col-10">
+			<div class="color__variable">{{ colors.variable }}</div>
+		</div>
+		<div class="col-2 text-right">
+			<div class="color__accessibility">{{ colors.accessibility }}</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<div class="color__hex copy-clipboard">{{ colors.color }}
+				<div class="color-copy float-right">
+					<div class="copy-message"></div>
+					<div class="color-copy__button">
+						<i class="fa fa-files-o" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+			<div id="code-clipboard">{{ colors.color }}</div>
+		</div>
+	</div>
+</div>

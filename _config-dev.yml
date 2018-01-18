@@ -1,0 +1,26 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+encoding: utf-8
+
+# Site settings
+title: Unit4 Design System
+version: 1.0.1
+updated: 03.10.2017
+description: >
+  This project is a Unit4 Design System website.
+baseurl: "/designsystem-dev" #for gh-pages deployment
+#baseurl: "" #for local development
+url: ""
+
+# Build settings
+markdown: kramdown
+exclude: [node_modules,
+					bower_components,
+					gulpfile.js,
+					package.json,
+					bower.json]

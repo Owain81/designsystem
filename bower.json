@@ -1,0 +1,20 @@
+{
+  "name": "design-system",
+  "description": "This project is a design system website for Unit4.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Maciej Goldsztejn <maciej.goldsztejn@unit4.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/UXCenter/designsystem",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}

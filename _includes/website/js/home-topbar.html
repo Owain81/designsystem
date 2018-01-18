@@ -1,0 +1,41 @@
+<script type="text/javascript">
+
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+var didScroll;
+// on scroll, let the interval function know the user has scrolled
+
+$(window).scroll(function(event){
+  didScroll = true;
+});
+
+// run hasScrolled() and reset didScroll status
+setInterval(function() {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);
+
+function hasScrolled() {
+  var st = $(this).scrollTop();
+  if (Math.abs(lastScrollTop - st) > delta) { 
+    // If current position > last position AND scrolled past navbar...
+    if (st > lastScrollTop && st > navbarHeight){
+      // Scroll Down
+      $('header').addClass('nav-down');
+      $('.sidebar__hamburger').addClass('in-topbar');
+    } else if(st <= navbarHeight) { 
+      $('header').removeClass('nav-down');
+      $('.sidebar__hamburger').removeClass('in-topbar');
+    }
+  }
+
+  lastScrollTop = st;
+}
+
+$('header h1').html('UNIT4 Design System');
+
+</script>

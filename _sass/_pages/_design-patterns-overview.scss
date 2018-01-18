@@ -1,0 +1,34 @@
+.page--design-pattern-overview {
+  a,
+  a:hover {
+    color: $card-color;
+  }
+
+  .card {
+    min-height: $dp-overview-card-min-height;
+
+    &--background {
+      margin-bottom: $card-background-margin-bottom;
+      background-size: cover;
+    }
+  }
+}
+
+.dp-overview {
+  &__introduction {
+    position: relative;
+    min-height: $dp-overview-intro-min-height;
+    padding-left: $dp-overview-intro-padding-left;
+  }
+
+  &__icon {
+    position: absolute;
+    top: $dp-overview-intro-icon-top;
+    left: 0;
+
+    .fa {
+      color: $color-grey-unit4;
+      font-size: $dp-overview-intro-icon-size;
+    }
+  }
+}

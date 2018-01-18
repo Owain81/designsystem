@@ -1,0 +1,116 @@
+.page--component {
+  .main-content {
+    .tab-pane#code > *:not(.component-section, iframe),
+    .tab-pane#usage {
+      max-width: $main-content-max-width-without-gutter;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+.do-and-dont {
+  &__image {
+    display: flex;
+    justify-content: center;
+    min-height: $dodont-image-min-height;
+    padding: $dodont-image-vertical-padding 0;
+    border-bottom-width: $dodont-image-border-bottom-width;
+    border-bottom-style: solid;
+    background-color: $color-grey-blue-background;
+
+    img {
+      margin-bottom: 0;
+    }
+
+    &--do {
+      border-bottom-color: $color-success;
+    }
+
+    &--dont {
+      border-bottom-color: $color-alert;
+    }
+
+    &--overlay {
+      background-color: $dodont-image-overlay-color;
+    }
+  }
+
+  &__title {
+    margin-bottom: $dodont-title-margin-bottom;
+
+    &--do {
+      color: $color-success;
+    }
+
+    &--dont {
+      color: $color-alert;
+    }
+  }
+
+  &__text {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.placement {
+  &__wrapper {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: set-space(xl); //28px
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    min-height: $placement-image-min-height;
+    padding: $dodont-image-vertical-padding 0;
+    background-color: $color-grey-blue-background;
+
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: $placement-title-margin-bottom;
+  }
+
+  &__caption {
+    font-size: $placement-caption-font-size;
+  }
+}
+
+.related__element {
+  &::after {
+    content: ', ';
+  }
+
+  &:last-child::after {
+    content: '.';
+  }
+}
+
+.table--component-usage {
+  .fa {
+    margin-right: $usage-table-icon-margin-right;
+
+    &-desktop {
+      font-size: $usage-table-icon-desktop-size;
+    }
+
+    &-tablet {
+      font-size: $usage-table-icon-tablet-size;
+    }
+
+    &-mobile {
+      font-size: $usage-table-icon-mobile-size;
+    }
+  }
+}
